@@ -7,6 +7,7 @@ Nightmare is an intro to binary exploitation / reverse engineering course based 
 It's true there are a lot of resources out there to learn binary exploitation / reverse engineering skills, so what makes this different?
 
 ```
+<<<<<<< HEAD
 *    Amount of Content     		-    There is a large amount of content in this course (currently over 90 challenges), laid out in a linear fashion.
 
 *    Well Documented Write Ups 		-    Each challenge comes with a well documented writeup explaining how to go from being handed the binary to doing the exploit dev.
@@ -16,6 +17,17 @@ It's true there are a lot of resources out there to learn binary exploitation / 
 *    Using all open source tools 	-    All the tools used here are free and open sourced. No IDA torrent needed.
 
 *    A Place to Ask Questions 		-    So if you have a problem that you've been working for days and can't get anywhere (and google isn't helping).
+=======
+*    Amount of Content             -    There is a large amount of content in this course (currently over 90 challenges), laid out in a linear fashion.
+
+*    Well Documented Write Ups         -    Each challenge comes with a well documented writeup explaining how to go from being handed the binary to doing the exploit dev.
+
+*    Multiple Problems per Topic     -    Most modules have multiple different challenges. This way you can use one to learn how the attack works, and then apply it to the others. Also different iterations of the problem will have knowledge needed to solve it.
+
+*    Using all open source tools     -    All the tools used here are free and open sourced. No IDA torrent needed.
+
+*    A Place to Ask Questions         -    So if you have a problem that you've been working for days and can't get anywhere (and google isn't helping).
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 ```
 
 I have found that resources that have many of these things to be few and far between. As a result it can make learning these skills difficult since you don't really know what to learn, or how to learn it. This is essentially my attempt to help fix some of those problems.
@@ -23,14 +35,27 @@ I have found that resources that have many of these things to be few and far bet
 
 If you want, there is a static github pages site which people say looks better: https://guyinatuxedo.github.io/
 
+<<<<<<< HEAD
+=======
+## Github
+
+A copy of all of the challenges listed, can be found on the github: https://github.com/guyinatuxedo/nightmare
+
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 ## Special Thanks
 
 Special thanks to these people:
 
 ```
+<<<<<<< HEAD
 noopnoop 	-	For dealing with me
 digitalcold     -	For showing me how good nightmare could look with mdbook
 you nerds 	-	For looking at this
+=======
+noopnoop     -    For dealing with me
+digitalcold  -    For showing me how good nightmare could look with mdbook
+you nerds     -    For looking at this
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 ```
 
 ## Discord
@@ -44,7 +69,11 @@ Also if you notice any typos or mistakes, feel free to mention it in the Discord
 Here is the index for all of the content in this course. Feel free to go through the whole thing, or only parts of it (don't let me tell you how to live your life). For the order that you do the challenges in a module, I would recommend starting with the first.
 
 
+<<<<<<< HEAD
 ## Intro 
+=======
+## Intro Departure
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 #### 0.) Intro to the Project    
 
@@ -61,6 +90,7 @@ Here is the index for all of the content in this course. Feel free to go through
 -    pico18_strings     
 -    helithumper_re
 -    csaw18_tourofx86pt1     
+<<<<<<< HEAD
 - 	 csaw19_beleaf
 
 
@@ -77,20 +107,47 @@ Here is the index for all of the content in this course. Feel free to go through
 -    Csaw18_getit     
 -    Tu17_vulnchat 
 -    Csaw16_warmup 
+=======
+-    csaw19_beleaf
+
+## Stack pt 0 Stack Tendencies
+
+#### 4.) Buffer Overflow of Variables
+
+-    Csaw18/boi
+-    TokyoWesterns17/just_do_it
+-    Tamu19_pwn1
+
+#### 5.) Buffer Overflow Call Function
+-    Csaw18_getit     
+-    Tu17_vulnchat
+-    Csaw16_warmup
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 #### 5.1) aslr/pie intro     
 -    quick aslr/pie explanation
 
+<<<<<<< HEAD
 #### 6.) Buffer Overflow Call Shellcode 
 -    Tamu19_pwn3  
 -    Csaw17_pilot 
+=======
+#### 6.) Buffer Overflow Call Shellcode
+-    Tamu19_pwn3  
+-    Csaw17_pilot
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 -    Tu18_shelleasy  
 
 #### 6.1) nx intro     
 -    nx explanation
 
+<<<<<<< HEAD
 #### 7.) ROP Chain Statically compiled 
 -    dcquals19_speedrun1 
+=======
+#### 7.) ROP Chain Statically compiled
+-    dcquals19_speedrun1
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 -    bkp16_simplecalc
 -    dcquals16_feedme
 
@@ -100,6 +157,7 @@ Here is the index for all of the content in this course. Feel free to go through
 #### 7.2) relro intro     
 -    relro introduction
 
+<<<<<<< HEAD
 #### 8.) ROP Dynamically Compiled 
 -    csaw17_svc    
 -    fb19_overfloat    
@@ -110,6 +168,16 @@ Here is the index for all of the content in this course. Feel free to go through
 
 
 ## General pt 0 	Stardust Challenges
+=======
+#### 8.) ROP Dynamically Compiled
+-    csaw17_svc    
+-    fb19_overfloat    
+-    hs19_storytime    
+-    csaw19_babyboi
+-    utc19_shellme
+
+## General pt 0 Stardust Challenges
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 #### 9.) Bad Seed     
 -    h3_time      
@@ -119,12 +187,21 @@ Here is the index for all of the content in this course. Feel free to go through
 
 #### 10.) Format strings     
 -    backdoor17_bbpwn  
+<<<<<<< HEAD
 -    twesterns16_greeting 
 -    pico_echo 
 - 	 watevr19_betstar
 
 #### 11.) Index Array    
 -    dcquals16_xkcd 
+=======
+-    twesterns16_greeting
+-    pico_echo
+-    watevr19_betstar
+
+#### 11.) Index Array    
+-    dcquals16_xkcd
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 -    sawmpctf19_dreamheaps
 -    sunshinectf2017_alternativesolution
 
@@ -138,9 +215,13 @@ Here is the index for all of the content in this course. Feel free to go through
 -    plaid19_icancount
 -    defcamp15_r100
 
+<<<<<<< HEAD
 
 
 ## Stack pt 1  	Return to Stack (truly a perfect game)
+=======
+## Stack pt 1 Return to Stack, truly a perfect game
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 #### 14.) Ret2system     
 -    asis17_marymorton    
@@ -156,20 +237,34 @@ Here is the index for all of the content in this course. Feel free to go through
 -    backdoorctf_funsignals    
 -    inctf17_stupiddrop
 -    swamp19_syscaller
+<<<<<<< HEAD
 -	 csaw19_smallboi
 
 #### 17.) Stack Pivot / Partial Overwrite 
 -    defconquals19_speedrun4 
+=======
+-    csaw19_smallboi
+
+#### 17.) Stack Pivot / Partial Overwrite
+-    defconquals19_speedrun4
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 -    insomnihack18_onewrite
 -    xctf16_b0verfl0w
 
 #### 18.) Ret2Csu / Ret2dl     
+<<<<<<< HEAD
 -    ropemporium_ret2csu 
 -    0ctf 2018 babystack
 
 
 
 ## General pt 1 	
+=======
+-    ropemporium_ret2csu
+-    0ctf 2018 babystack
+
+## General pt 1 Armstrong challenges
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 #### 19.) Shellcoding pt 1    
 -    defconquals19_s3    
@@ -192,18 +287,29 @@ Here is the index for all of the content in this course. Feel free to go through
 -    asis18quals_babyc    
 -    other_movfuscated
 
+<<<<<<< HEAD
 #### 23.) Custom Architectures 
+=======
+#### 23.) Custom Architectures
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 -    h3_challenge0    
 -    h3_challenge1
 -    h3_challenge2
 -    h3_challenge3
 
+<<<<<<< HEAD
 
 
 ## Heap Pt 0
 
 #### 24.) Basic Heap overflow 
 -    protostar_heap1 
+=======
+## Heap Pt 0 rip Angel Beats
+
+#### 24.) Basic Heap overflow
+-    protostar_heap1
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 -    protostar_heap0
 -    protostar_heap2
 
@@ -249,9 +355,13 @@ Here is the index for all of the content in this course. Feel free to go through
 -    csawquals18_AliensVSSamurai
 -    csawquals19_traveller
 
+<<<<<<< HEAD
 
 
 ## General Pt 2
+=======
+## General Pt 2 Generic Isekai #367
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 #### 34.) Qemu / Emulated Targets     
 -   csaw18_tour_of_x86_pt_2     
@@ -259,11 +369,16 @@ Here is the index for all of the content in this course. Feel free to go through
 -   csaw17_realism
 
 #### 35.) Integer Exploitation     
+<<<<<<< HEAD
 -   puzzle 
+=======
+-   puzzle
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 -   int_overflow_post
 -   signed_unsigned_int_expl
 
 #### 36.) Obfuscated Reversing     
+<<<<<<< HEAD
 - 	csaw15_wyvern     
 - 	csaw17_prophecy
 - 	bkp16_unholy
@@ -280,6 +395,22 @@ Here is the index for all of the content in this course. Feel free to go through
 
 
 ## Heap pt 2
+=======
+-    csaw15_wyvern     
+-    csaw17_prophecy
+-    bkp16_unholy
+
+#### 37.) FS Exploitation    
+-    swamp19_badfile
+
+#### 38.) Grab Bag         
+-    csaw18_doubletrouble
+-    hackim19_shop        
+-    unit_vars_expl
+-    csaw19_gibberish
+
+## Heap pt 1 heap x heap
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 #### 39.) House of Spirit     
 -    explanation
@@ -299,6 +430,7 @@ Here is the index for all of the content in this course. Feel free to go through
 -    explanation
 
 #### 44.) More tcache
+<<<<<<< HEAD
 -	csaw19_poppingCaps0
 -	csaw19_poppingCaps1
 
@@ -307,3 +439,16 @@ Here is the index for all of the content in this course. Feel free to go through
 #### References
 
 #### What's next 
+=======
+-    csaw19_poppingCaps0
+-    csaw19_poppingCaps1
+
+#### 45.) Automatic Exploit Generation
+-    csaw20_rop
+
+#### Ending Documentation
+-    References
+-    What's next
+
+
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

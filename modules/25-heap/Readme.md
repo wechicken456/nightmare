@@ -4,7 +4,11 @@ This module is literally just an explanation as to how various parts of the heap
 
 ## Libc
 
+<<<<<<< HEAD
 The first thing I would like to say is that on linux all of the source code for standard functions like malloc and calloc is located in the libc. Across different libc versions the code for various functions change, including the code for malloc. That means that different libc's mallocs operate in different ways. For instance the same binary running with two different libc versions, can see different behavior in the heap. You'll see this come up a lot. When you are working on a heap challenge, make sure you are using the right libc file (assuming the heap challenge is libc dependant). You might need to use something like `LD_PRELOAD` to do this (which you can see how I tackle this in exploit).
+=======
+The first thing I would like to say is that on linux all of the source code for standard functions like malloc and calloc is located in the libc. Across different libc versions the code for various functions change, including the code for malloc. That means that different libc's mallocs operate in different ways. For instance the same binary running with two different libc versions, can see different behavior in the heap. You'll see this come up a lot. When you are working on a heap challenge, make sure you are using the right libc file (assuming the heap challenge is libc dependent). You might need to use something like `LD_PRELOAD` to do this (which you can see how I tackle this in exploit).
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 ## Malloc Chunk
 
@@ -52,7 +56,11 @@ gef➤  x/4g 0x555555559250
 0x555555559260:    0x61646e6170    0x0
 ```
 
+<<<<<<< HEAD
 So we can see here is our heap chunk. Every heap chunk has something called a heap header (I often call it heap metadata). On `x64` (64-bit) systems it's the previous `0x10` bytes from the start of the heap chunk, and on `x86` (32-bit) systems it's the previous `0x8` bytes. It contains two separate values, the previous chunk size, and the chunk size.
+=======
+So we can see here is our heap chunk. Every heap chunk has something called a heap header (I often call it heap metadata). On `x64` systems it's the previous `0x10` bytes from the start of the heap chunk, and on `x86` systems it's the previous `0x8` bytes. It contains two separate values, the previous chunk size, and the chunk size.
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 ```
 0x0:    0x00     - Previous Chunk Size
@@ -107,9 +115,15 @@ Now the fast bin is called that, because allocating from the fast bin is typical
 
 The tcache is sort of like the Fast Bins, however it has it's differences.
 
+<<<<<<< HEAD
 The tcahce is a new type of binning mechanism introduced in libc version `2.26` (before that, you won't see the tcahce). The tcache is specific to each thread, so each thread has its own tcache. The purpose of this is to speed up performance since malloc won't have to lock the bin in order to edit it. Also in versions of libc that have a tcache, the tcache is the first place that it will look to either allocate chunks from or place freed chunks (since it's faster).
 
 An actual tcache list is stored like a Fast Bin where it is a linked list. Also like the Fast Bin, it is LIFO. However a tcache list can only hold `7` chunks at a time. If a chunk is freed that meets the size requirement of a tcache however its list is full, then it is inserted into the next bin that meets its size requirements. Let's see this in action.
+=======
+The tcache is a new type of binning mechanism introduced in libc version `2.26` (before that, you won't see the tcache). The tcache is specific to each thread, so each thread has its own tcache. The purpose of this is to speed up performance since malloc won't have to lock the bin in order to edit it. Also in versions of libc that have a tcache, the tcache is the first place that it will look to either allocate chunks from or place freed chunks (since it's faster).
+
+An actual tcache list is stored like a Fast Bin where it is a linked list. Also like the Fast Bin, it is LIFO. However a tcache list can only hold `7` chunks at a time. If a chunk is freed that meets the size requirement of a tcache however it's list is full, then it is inserted into the next bin that meets its size requirements. Let's see this in action.
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 Here is our source code:
 ```
@@ -289,7 +303,11 @@ The Small Bin, Large Bin, and Unsorted Bin are tied more closely together in how
 There is one list for the Unsorted Bin, 62 for the Small Bin, and 63 for the Large Bin. let's talk about the unsorted bin first.
 
 
+<<<<<<< HEAD
 For chunks that are inserted into one of the bins, however isn't inserted into the fast bin or tcache, it will first be inserted into the Unsorted Bin. Chunks will remain there until they are sorted. This happens when another call is made to malloc. It will then check through the Unsorted Bin for any possible chunks that can meet the allocation. Also one thing that you will see in the unsorted bin, is it is capable off a piece of a chunk to serve a request (it can also consolidate chunks together). Also when it checks the unsorted bin, it will check if there are chunks that belong in one of the small / large bin lists. If there are it will move those chunks to the appropriate bins.
+=======
+For chunks that are inserted into one of the bins, however isn't inserted into the fast bin or tcache, it will first be inserted into the Unsorted Bin. Chunks will remain there until they are sorted. This happens when another call is made to malloc. It will then check through the Unsorted Bin for any possible chunks that can meet the allocation. Also one thing that you will see in the unsorted bin, is it is capable of taking off a piece of a chunk to serve a request (it can also consolidate chunks together). Also when it checks the unsorted bin, it will check if there are chunks that belong in one of the small / large bin lists. If there are it will move those chunks to the appropriate bins.
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 Like the fast bin, the 62 lists of the Small Bin and 63 lists of the Large Bin are divided by size. The small bins on `x64` consists of chunk sizes under `0x400` (`1024` bytes), and on `x86` consists of chunk sizes under `0x200` (`512` bytes), and the large bin consists of values above those.
 
@@ -530,7 +548,11 @@ Consolidation tries to fix this by merging adjacent freed chunks together, into 
 
 ## Top Chunk
 
+<<<<<<< HEAD
 The Top Chunk is essentially a large heap chunk that holds currently unallocated data. Think of it as were freed data that isn't in one of the bin lists goes.
+=======
+The Top Chunk is essentially a large heap chunk that holds currently unallocated data. Think of it as where freed data that isn't in one of the bin lists goes.
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 Let's say you call `malloc(0x10)`, and it's your first time calling `malloc` so the heap isn't set up. When `malloc` sets up the heap, it will request some space from the kernel that is much larger than `0x10` bytes. Allocating large chunks of memory from the kernel, and managing memory allocations from that memory is a lot more efficient than requesting memory from the kernel each time. The remainder from the `0x20` bytes from the request (`0x10` from requested size and `0x10` from heap metadata) will end up in the top chunk (top chunk is sometimes also called). So just to reiterate the top chunk holds unallocated data that isn't in the bin list.
 
@@ -789,7 +811,11 @@ Here we can see the check that we failed. The check is being done on a chunk all
 
 #### Linking
 
+<<<<<<< HEAD
 When you attempt to use `LD_PRELOAD` to have a binary use a specific libc file, you might find an issue if the linker's are not compatible. If you run into that issue where you try to `LD_PRELOAD` a libc version that isn't compatible and you have gdb attached, you should see an error message from gdb like this:
+=======
+When you attempt to use `LD_PRELOAD` to have a binary use a specific libc file, you might find an issue if the linker is not compatible. If you run into that issue where you try to `LD_PRELOAD` a libc version that isn't compatible and you have gdb attached, you should see an error message from gdb like this:
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 ```
 GEF for linux ready, type `gef' to start, `gef config' to configure
@@ -807,7 +833,11 @@ ptrace: Operation not permitted.
 gef➤  
 ```
 
+<<<<<<< HEAD
 There are several ways you can tackle this problem. You could just keep all of the linkers on hand, and just use them as you need to. What I currently do is run several different vms with different versions of Ubuntu. This is because different versions of Ubuntu ship with different linkers, and different linkers work with different libc versions. I find this to be less of a hassle. For all of the libc dependant challenges, in the writeup I put what version of Ubuntu I used, so if you want to take the same approach you can.
+=======
+There are several ways you can tackle this problem. You could just keep all of the linkers on hand, and just use them as you need to. What I currently do is run several different vms with different versions of Ubuntu. This is because different versions of Ubuntu ship with different linkers, and different linkers work with different libc versions. I find this to be less of a hassle. For all of the libc dependent challenges, in the writeup I put what version of Ubuntu I used, so if you want to take the same approach you can.
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 ## Explanations
 

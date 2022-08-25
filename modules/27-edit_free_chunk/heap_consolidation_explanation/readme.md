@@ -1,6 +1,10 @@
 # edit free chunk uaf explanation
 
+<<<<<<< HEAD
 This module essentially explains what heap consolidation achieved via a buffer overflow is. It can be used to edit freed chunks, and heap metadata among other things. This can be very useuful for other attacks. Checkout the well documented source code or binary to see the explanation.
+=======
+This module essentially explains what heap consolidation achieved via a buffer overflow is. It can be used to edit freed chunks, and heap metadata among other things. This can be very useful for other attacks. Checkout the well documented source code or binary to see the explanation.
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 The code:
 ```

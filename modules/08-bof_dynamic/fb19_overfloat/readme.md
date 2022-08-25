@@ -73,7 +73,11 @@ undefined8 main(void)
 }
 ```
 
+<<<<<<< HEAD
 Looking through the code here, we see that the part we are really interested about is `chart_course` function call, which takes the pointer `charBuf` as an argument. When we look at the `chart_course` disassembly in IDA, we see this: 
+=======
+Looking through the code here, we see that the part we are really interested about is `chart_course` function call, which takes the pointer `charBuf` as an argument. When we look at the `chart_course` disassembly in Ghidra, we see this: 
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 ```
 void chart_course(long ptr)
@@ -237,4 +241,8 @@ sendVal(base + oneShot)
 target.sendline('done')
 
 target.interactive()
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

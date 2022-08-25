@@ -50,4 +50,8 @@ int main(void)
 	printf("Malloc Allocated: %p\n\n", malloc(0x10));
 
 	printf("Just like that, we got malloc to allocate a chunk to the target stack variable. In practice we would try and allocate a chunk to something much more interesting (but this is more of a proof of concept).\n");
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

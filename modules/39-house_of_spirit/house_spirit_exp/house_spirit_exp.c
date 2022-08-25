@@ -40,11 +40,19 @@ int main(void)
 	+-------+---------------------+------+
 	| 0x10: | Chunk # 0 content   | 0x00 |
 	+-------+---------------------+------+
+<<<<<<< HEAD
 	| 0x70: | Chunk # 1 prev size | 0x00 |
 	+-------+---------------------+------+
 	| 0x78: | Chunk # 1 size      | 0x40 |
 	+-------+---------------------+------+
 	| 0x80: | Chunk # 1 content   | 0x00 |
+=======
+	| 0x60: | Chunk # 1 prev size | 0x00 |
+	+-------+---------------------+------+
+	| 0x68: | Chunk # 1 size      | 0x40 |
+	+-------+---------------------+------+
+	| 0x70: | Chunk # 1 content   | 0x00 |
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 	+-------+---------------------+------+
 
 	for what we are doing the prev size values don't matter too much
@@ -73,4 +81,8 @@ int main(void)
 
 	printf("returned pointer: %p\n", target);
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

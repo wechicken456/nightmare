@@ -36,4 +36,8 @@ int main(void)
 
     printf("Just like that, we used a UAF to edit a freed chunk!\n");
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

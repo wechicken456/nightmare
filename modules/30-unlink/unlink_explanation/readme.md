@@ -148,4 +148,8 @@ Fake Chunk fd_nextsize:		0x0
 
 With that, we can free the second chunk and trigger the unlink.
 With that target should be the address of the Fd pointer: 0x602040
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

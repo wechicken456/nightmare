@@ -48,5 +48,9 @@ for i in xrange(19):
     flag = chr(flag_int & 0xff) + flag
     flag_int = flag_int >> 8
 
+<<<<<<< HEAD
 print ("flag: PCTF{" + flag + "}")
+=======
+print "flag: PCTF{" + flag + "}"
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 

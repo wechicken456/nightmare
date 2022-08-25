@@ -355,4 +355,8 @@ target.sendline('/bin/sh')
 target.interactive()
 ```
 
+<<<<<<< HEAD
 With that exploit, we get shell!
+=======
+With that exploit, we get shell!
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

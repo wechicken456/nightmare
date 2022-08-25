@@ -99,4 +99,8 @@ bk:	0x602048
 Now we allocate a new chunk of the same size to remove our freed chunk from the unsorted bin.This will trigger the write to remissions, which has a current value of 0x0
 Now we can see that the value of remissions has changed.
 remissions:	0x7ffb7b5fcb78
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

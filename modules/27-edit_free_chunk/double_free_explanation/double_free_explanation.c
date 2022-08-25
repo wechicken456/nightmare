@@ -73,4 +73,8 @@ int main(void)
 
     printf("Just like that, we were able to use a double free to edit a free chunk!\n");
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

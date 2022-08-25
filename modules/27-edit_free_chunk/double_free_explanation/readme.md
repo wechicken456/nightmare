@@ -1,6 +1,10 @@
 # edit free chunk uaf explanation
 
+<<<<<<< HEAD
 This module essentially explains what a Double Free bug is. It can be used to edit freed chunks, and heap metadata among other things. This can be very useuful for other attacks. Checkout the well documented source code or binary to see the explanation.
+=======
+This module essentially explains what a Double Free bug is. It can be used to edit freed chunks, and heap metadata among other things. This can be very useful for other attacks. Checkout the well documented source code or binary to see the explanation.
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 The code:
 ```
@@ -119,4 +123,8 @@ So you can see that we have freed ptr3 (Chunk 3) and discarded it's pointer. How
 Chunk5: @ 0x557c30676670     contains: 15935728
 
 Just like that, we were able to use a double free to edit a free chunk!
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

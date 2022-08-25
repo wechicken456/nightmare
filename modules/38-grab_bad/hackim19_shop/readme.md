@@ -241,7 +241,11 @@ Now for the actual write itself, I will do three writes of two bytes each. The r
 
 ### Exploit
 
+<<<<<<< HEAD
 Putting it all together, we get the following exploit. Also when I was doing the exploit dev for this one, I'm not sure why but I had some I/O issues. In addition to that, this exploit is dependant on the libc version. So if you have a different libc version, you will need to swap out the libc file in the exploit:
+=======
+Putting it all together, we get the following exploit. Also when I was doing the exploit dev for this one, I'm not sure why but I had some I/O issues. In addition to that, this exploit is dependent on the libc version. So if you have a different libc version, you will need to swap out the libc file in the exploit:
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 ```
 from pwn import *

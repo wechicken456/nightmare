@@ -689,4 +689,8 @@ $ ls
 exploit.py  libc-2.23.so  stkof
 ```
 
+<<<<<<< HEAD
 Just like that we popped a shell!
+=======
+Just like that we popped a shell!
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

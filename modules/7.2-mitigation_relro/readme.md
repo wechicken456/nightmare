@@ -1,6 +1,10 @@
 # Relro
 
+<<<<<<< HEAD
 Relro (Read only Relocation) affects the memory permissions similar to NX. The difference is whereas with NX it makes the stack executable, RELRO makes certain things read only so we can't write to them. The most common way I've seen this be an obstacle is preventing us from doing a `got` table overwrite, which will be covered later. The `got` table holds addresses for libc functions so that the binary knows what the addresses are and can call them. Let's see what the memory permissions look like for a `got` table entry for a binary with and without relro.
+=======
+Relro (Read only Relocation) affects the memory permissions similar to NX. The difference is whereas with NX it makes the stack non-executable, RELRO makes certain things read only so we can't write to them. The most common way I've seen this be an obstacle is preventing us from doing a `got` table overwrite, which will be covered later. The `got` table holds addresses for libc functions so that the binary knows what the addresses are and can call them. Let's see what the memory permissions look like for a `got` table entry for a binary with and without relro.
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 With relro:
 
@@ -74,4 +78,8 @@ gef➤  search-pattern 0x7ffff7e4d100
 
 For the binary without relro, we can see that the `got` entry address for `fgets` is `0x404018`. Looking at the memory mappings we see that it falls between `0x404000` and `0x405000`, which has the permissions `rw`, meaning we can read and write to it. For the binary with relro, we see that the `got` table address for the run of the binary (pie is enabled so this address will change) is `0x555555557fd0`. In that binary's memory mapping it falls between `0x0000555555557000` and `0x0000555555558000`, which has the memory permission `r`, meaning that we can only read from it.
 
+<<<<<<< HEAD
 So what's the bypass? The typical bypass I use is to just don't write to memory regions that relro causes to be read only, and find a different way to get code execution.
+=======
+So what's the bypass? The typical bypass I use is to just don't write to memory regions that relro causes to be read only, and find a different way to get code execution.
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

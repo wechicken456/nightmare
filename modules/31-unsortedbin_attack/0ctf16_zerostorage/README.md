@@ -54,7 +54,11 @@ Before this menu is printed, a function at 00100f20 is called. This function set
 
 ### Insert
 
+<<<<<<< HEAD
 The insert function is located at 00100fd0. Here, we can see that the size of our chunk must be between 0x80 and 0x1000. With the metadata, that means we can only make heaps of sizes at least 0x90. This means that we cannot use fastbins, so we will have to find another exploitation type. Also, we can see that the pointers are xored with a global key before they are stoerd in the binary, so it may be hard to exploit these. Luckily, we will be able to use the unsorted bin, so we will look into that attack after the static analysis.
+=======
+The insert function is located at 00100fd0. Here, we can see that the size of our chunk must be between 0x80 and 0x1000. With the metadata, that means we can only make heaps of sizes at least 0x90. This means that we cannot use fastbins, so we will have to find another exploitation type. Also, we can see that the pointers are xored with a global key before they are stored in the binary, so it may be hard to exploit these. Luckily, we will be able to use the unsorted bin, so we will look into that attack after the static analysis.
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 ```
       if (0 < entry_length) {
@@ -476,4 +480,8 @@ delete(0)
 target.interactive()
 ```
 
+<<<<<<< HEAD
 I would like to give credit to this writeup for helping me solve an issue with the merging free affecting the fastbin size: [https://stfwlg.github.io/archivers/2016_0ctf-_zerostorage_%ED%92%80%EC%9D%B4]
+=======
+I would like to give credit to this writeup for helping me solve an issue with the merging free affecting the fastbin size: https://stfwlg.github.io/archivers/2016\_0ctf-\_zerostorage\_%ED%92%80%EC%9D%B4
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

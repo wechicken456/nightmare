@@ -15,7 +15,11 @@ Line `129` is:
 
 This command is xoring the `dh` register with itself, and stores the value in the `dh` register. Due to how the binary operation xoring works, whenever you xor something by itself the result is 0. So the value of dh after line 129 executes is `0x0`.
 
+<<<<<<< HEAD
 #### What is the value of dh after line 145 executes?
+=======
+#### What is the value of gs after line 145 executes?
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
 
 Line `145` is:
 ```
@@ -132,4 +136,8 @@ print_string:
     .end:
 ```
 
+<<<<<<< HEAD
 Here is a loop that is printing all of the characters of the string. At the start of this loop the pointer points to the beginning of the string (line 197), then gets incremented (line 202) by one meaning that it moves on to the next character untill it hits the null byte (`0x0`), which the comparison happens at line 192. It will print each character with the interrupt a line `200` (check out https://en.wikipedia.org/wiki/INT_10H for more info, the value `0x0e` in the `ah` register is an argument to the interrupt). Since the first character of the string is `a` which in hex is `0x61`, the value of `al` the first time it is ran should be `0x61`. So the value of the `ax` register should be `0x0e61`.
+=======
+Here is a loop that is printing all of the characters of the string. At the start of this loop the pointer points to the beginning of the string (line 197), then gets incremented (line 202) by one meaning that it moves on to the next character untill it hits the null byte (`0x0`), which the comparison happens at line 192. It will print each character with the interrupt a line `200` (check out https://en.wikipedia.org/wiki/INT_10H for more info, the value `0x0e` in the `ah` register is an argument to the interrupt). Since the first character of the string is `a` which in hex is `0x61`, the value of `al` the first time it is ran should be `0x61`. So the value of the `ax` register should be `0x0e61`.
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589

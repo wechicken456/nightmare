@@ -98,4 +98,8 @@ Now that the address of our stack integer is at the top of the tcache, the next 
 Malloc Allocated: 0x7ffe00b8da64
 
 Just like that, we got malloc to allocate a chunk to the target stack variable. In practice we would try and allocate a chunk to something much more interesting (but this is more of a proof of concept).
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 62e51517054901aa0b7fd1508d70dcb095961589
