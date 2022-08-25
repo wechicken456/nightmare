@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FILE_INFO>
+    <BASIC_INFO>
+        <STATE NAME="CONTENT_TYPE" TYPE="string" VALUE="Program" />
+        <STATE NAME="PARENT" TYPE="string" VALUE="/13" />
+        <STATE NAME="FILE_ID" TYPE="string" VALUE="c0a80f5c3c67184501162247" />
+        <STATE NAME="FILE_TYPE" TYPE="int" VALUE="0" />
+        <STATE NAME="READ_ONLY" TYPE="boolean" VALUE="false" />
+        <STATE NAME="NAME" TYPE="string" VALUE="icancount" />
+    </BASIC_INFO>
+</FILE_INFO>

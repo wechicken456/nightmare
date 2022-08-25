@@ -48,5 +48,5 @@ for i in xrange(19):
     flag = chr(flag_int & 0xff) + flag
     flag_int = flag_int >> 8
 
-print "flag: PCTF{" + flag + "}"
+print ("flag: PCTF{" + flag + "}")
 

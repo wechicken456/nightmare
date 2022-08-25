@@ -1,6 +1,7 @@
 #Import pwntools
 from pwn import *
 
+context.terminal = "/bin/bash"
 #Establish the target process, or network connection
 target = process('./32_new')
 

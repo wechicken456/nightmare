@@ -1,0 +1,5 @@
+
+--------------- Set linker to libc-2.27 ----------------------
+patchelf --set-interpreter ./ld-2.27.so ./overfloat 
+
+exploit same as the original, changed one_shot gadget to match libc

@@ -52,7 +52,7 @@ gef➤  x/4g 0x555555559250
 0x555555559260:    0x61646e6170    0x0
 ```
 
-So we can see here is our heap chunk. Every heap chunk has something called a heap header (I often call it heap metadata). On `x64` systems it's the previous `0x10` bytes from the start of the heap chunk, and on `x86` systems it's the previous `0x8` bytes. It contains two separate values, the previous chunk size, and the chunk size.
+So we can see here is our heap chunk. Every heap chunk has something called a heap header (I often call it heap metadata). On `x64` (64-bit) systems it's the previous `0x10` bytes from the start of the heap chunk, and on `x86` (32-bit) systems it's the previous `0x8` bytes. It contains two separate values, the previous chunk size, and the chunk size.
 
 ```
 0x0:    0x00     - Previous Chunk Size
@@ -109,7 +109,7 @@ The tcache is sort of like the Fast Bins, however it has it's differences.
 
 The tcahce is a new type of binning mechanism introduced in libc version `2.26` (before that, you won't see the tcahce). The tcache is specific to each thread, so each thread has its own tcache. The purpose of this is to speed up performance since malloc won't have to lock the bin in order to edit it. Also in versions of libc that have a tcache, the tcache is the first place that it will look to either allocate chunks from or place freed chunks (since it's faster).
 
-An actual tcache list is stored like a Fast Bin where it is a linked list. Also like the Fast Bin, it is LIFO. However a tcache list can only hold `7` chunks at a time. If a chunk is freed that meets the size requirement of a tcache however it's list is full, then it is inserted into the next bin that meets its size requirements. Let's see this in action.
+An actual tcache list is stored like a Fast Bin where it is a linked list. Also like the Fast Bin, it is LIFO. However a tcache list can only hold `7` chunks at a time. If a chunk is freed that meets the size requirement of a tcache however its list is full, then it is inserted into the next bin that meets its size requirements. Let's see this in action.
 
 Here is our source code:
 ```

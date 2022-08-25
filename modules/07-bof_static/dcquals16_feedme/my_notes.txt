@@ -1,0 +1,16 @@
+
+fuzz = "AAAABBBBCCCCDDDDEEEEFFFFGGGGHHHHIIIIJJJJKKKKLLLL"
+input addr is 0xffffd59c and input offset from EBP is 44 
+canary addr is 0xffffd5bc and canary offset from EBP is 12
+=> canary offset from input is 44-12=32 => how interesting as the minimum size for our input is 32 bytes
+=> suggesting a canary bruteforce approach (also because child processes share the same canary as the parent)
+
+
+-------------------------------- ROP ----------------------------------
+Writable memory region: 0x080e9000 - 0x080eb000
+linux syscall table for 32-bit: https://syscalls32.paolostivanin.com
+
+
+
+
+

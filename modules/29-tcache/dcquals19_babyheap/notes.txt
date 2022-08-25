@@ -1,0 +1,13 @@
+Make:
+	allocate 0xf8 chunk,  allow to fill in `input_size` bytes. when delete content, only delete 'input_size' bytes. 
+
+	Array of heap pointers start at 0x0000555555558060
+	Each heap pointer lies 0x10 from each other, so does size. 
+	x/100gx 0x000055555555a560
+
+Show:
+	can leak address of the next free chunk by entering '\n' or '\0' as the content: when we reallocate a free chunk from tcache, the just-allocated chunk still contain the pointer to the next-to-be-reallocated chunk. 
+
+
+
+__malloc_hook offset: 1985584
