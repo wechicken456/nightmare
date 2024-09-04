@@ -39,7 +39,7 @@ int main(void)
 	printf("fwd:\t0x%lx\n", ptr0[0]);
 	printf("bk:\t0x%lx\n\n", ptr0[1]);
 
-	printf("Now when a chunk gets removed from the unsorted bin, a pointer to gets written to it's back chunk.\n");
+	printf("Now when a chunk gets removed from the unsorted bin, a pointer to it gets written to it's back chunk.\n");
 	printf("Specifically a pointer will get written to bk + 0x10 on x64 (bk + 0x8 for x86).\n");
 	printf("That is where we get our ptr write from.\n\n");
 

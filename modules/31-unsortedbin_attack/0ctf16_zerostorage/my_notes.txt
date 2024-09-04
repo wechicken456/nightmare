@@ -1,0 +1,30 @@
+insert entry:
+	- Make sure size for allocated chunk is 0x7f < x < 0x10001
+	- Find the first empty spot in the array.
+	- allocate heap chunk
+	- store random_bytes ^ chunk address  to &entry_xor_bytes+idx*0x18
+	- set &entry_check+idx*6 = 1
+	- set &entry_size+idx*3 = input_size
+
+	- Can insert upto 0x20 = 32 chunks
+
+edit entry:
+	- Make sure input_size is 0x7f < x < 0x10001
+	- If input_size != original_size, then reallocate a new chunk with new input_size
+	- Then read in and overwrite data.
+	- store random_bytes ^ chunk address  to &entry_xor_bytes+idx*0x18
+	- set &entry_size+idx*3 = new input_size
+
+merge entry:
+	- Find first empty spot in the array
+	- size_sum = size_to chunk + size_from chunk.
+	- if size_sum != size_to:
+		realloc(ptr_to, size_sum). realloc frees the memory pointed to by ptr_to
+	- memcpy(ptr_to + size_to, ptr_from, size_from)
+	- store new chunk address ^ random_bytes to &entry_xor_bytes+i*0x18 where i is the first empty spot
+	- set all information about both "to" and "from" chunk to NULL
+	- free ptr_from
+	=> if idx_to and idx_from are equal, then realloc has already freed the chunk. freeing the chunk again here causes a double free.
+
+
+

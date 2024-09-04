@@ -14,7 +14,7 @@ int main(void)
 {
 	puts("This will be covering large bin attacks.");
 	puts("They are similar to unsorted bin attacks, with that they let us write a pointer.");
-	puts("However like unsorted bin attacks, we can control where the pointer is written to, but not the value of the pointer.");
+	puts("Like unsorted bin attacks, we can control where the pointer is written to, but not the value of the pointer.");
 	puts("Let's get started.\n");
 
 	unsigned long target = 0xdeadbeef;
@@ -56,7 +56,7 @@ int main(void)
 	free(ptr1);
 
 	printf("Now they are both in the unsorted bin.\n");
-	printf("Since large bin sized chunks are inserted into the unsorted bin, before being moved to the large bin for potential reuse before they are thrown into that bin.\n");
+	printf("Since large bin sized chunks are inserted into the unsorted bin, before being moved to the large bin, for potential reuse before they are thrown into large bin.\n");
 	printf("We will now allocate a fastbin sized chunk. This will move our second (larger) chunk into the large bin (since it is the larger chunk in the unsorted bin).\n");
 <<<<<<< HEAD
 	printf("The first (smaller) chunk will have part of it's space used for the allocation, and then the remaining chunk will be inserted into the unsorted bin.\n\n");

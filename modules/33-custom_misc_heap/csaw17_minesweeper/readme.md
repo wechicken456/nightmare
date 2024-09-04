@@ -639,7 +639,7 @@ The main thing from this we are going to need is this:
         printMaybe?(parm0,arg1,arg2,arg3);
 ```
 
-It will allow us to print the data a board that we initialize. We will use this for an infoleak later.
+It will allow us to print the data of a board that we initialize. We will use this for an infoleak later.
 
 #### Custom Malloc
 
